@@ -1,0 +1,173 @@
+titel: "Life Map – Tiemen R. Tuinstra"
+periode: "1989–2025"
+
+legenda:
+  piek: "Positief hoogtepunt"
+  dal: "Moeilijke periode"
+  groei: "Persoonlijke ontwikkeling"
+  relatie: "Relatie/liefde"
+  vakantie: "Rust en reizen"
+  scouting: "Scouting-activiteiten"
+  psychologie: "Psychologie/ASS-gerelateerd"
+  creativiteit: "Creatieve ontwikkeling"
+  werk: "Werkervaring"
+  familie: "Familie-gebeurtenis"
+
+periodes:
+  vroegeJeugd:
+    titel: "Vroege jeugd en gezinssysteem (1989-1996)"
+    gebeurtenissen:
+      - jaar: "1989"
+        type: [piek, psychologie, familie]
+        beschrijving: "Geboorte, 3 weken te vroeg, na een zware HG-zwangerschap van moeder. Prikkelgevoelig zenuwstelsel vanaf de start. Moeder: cognitieve verwerkingsproblemen, dyscalculie, muziekdocent. Vader: creatief, grafisch ontwerper/productontwikkelaar, prikkelbaar karakter."
+      - jaar: "1989-1991"
+        type: [psychologie]
+        beschrijving: "Baby- en peuterfase: sterke nabijheidsbehoefte aan moeder, weinig spontaan oogcontact, beperkte sociale wederkerigheid, sterke eenkennigheid. Ontwikkelt al vroeg een eigen binnenwereld en een grote behoefte aan voorspelbaarheid."
+      - jaar: "1991"
+        type: [piek, familie]
+        beschrijving: "Geboorte van broer Jelte. Veel aandacht verschuift naar hem; Tiemen wordt meer de stille toeschouwer."
+      - jaar: "1991-1993"
+        type: [psychologie]
+        beschrijving: "Oculomotorische apraxie: moeite met oogvolgbewegingen. Weinig gedeelde aandacht, weinig initiatief in sociale interactie. Sensorische gevoeligheden: paniek bij kapper, haren wassen en sommige geluiden (bijv. accordeon), maar ook opvallend goede koude-tolerantie en rust in water."
+      - jaar: "1993-1996"
+        type: [psychologie]
+        beschrijving: "ASS-signalen duidelijk aanwezig: thema-gericht spel, sterk letterlijk denken, vaste routines, moeite met veranderingen. Consultatiebureau ziet al kenmerken passend bij ASS, maar dit wordt niet echt doorgezet."
+      - jaar: "1996"
+        type: [dal, familie]
+        beschrijving: "Overlijden van opa (moeders kant) – eerste grote verlieservaring."
+
+  basisschool:
+    titel: "Basisschool, creativiteit en eerste interesses (1997-2002)"
+    gebeurtenissen:
+      - jaar: "1997"
+        type: [piek, creativiteit]
+        beschrijving: "Eerste computer in huis. Gaat helemaal op in spellen rond geschiedenis, topografie en simulatie. Begint met Photoshop en Flash. Start van levenslange lijn: taal + beeld + techniek + fantasiewerelden."
+      - jaar: "1997-2002"
+        type: [vakantie, piek]
+        beschrijving: "Regelmatige vakanties naar Scandinavië. Rust, natuur, water en stilte geven een veilig gevoel. Droomt over een toekomst als campingbaas in de natuur met een simpel leven."
+      - jaar: "2000"
+        type: [piek, scouting]
+        beschrijving: "Start bij Scouting MKWJ. Vindt structuur, ritme en duidelijke rollen – een omgeving die goed past."
+      - jaar: "2001"
+        type: [piek, familie]
+        beschrijving: "Geboorte van zus Jorike. Het gezin is nu compleet."
+
+  pesten:
+    titel: "Pesten, school en sociaal-emotionele littekens (2003-2006)"
+    gebeurtenissen:
+      - jaar: "2003-2006"
+        type: [dal, psychologie]
+        beschrijving: "Zwaar pesten op de basisschool en deels op de middelbare school, zelfs door een docent. Voelt zich onveilig en onbegrepen. Stapt over van de Aloysiusschool naar de Montinischool. Dit laat een blijvend litteken achter op zelfbeeld en vertrouwen."
+
+  leiderschap:
+    titel: "Leiderschap, scouting en studiekeuze (2007-2012)"
+    gebeurtenissen:
+      - jaar: "2007-2012"
+        type: [groei, scouting]
+        beschrijving: "Leiding bij de Dolfijnen (MKWJ). Ontdekt dat hij rust, structuur en veiligheid kan bieden aan kinderen. Eerste belangrijke leiderschapsrol."
+      - jaar: "2008"
+        type: [dal, familie]
+        beschrijving: "Overlijden van oma (vaders kant)."
+      - jaar: "2009"
+        type: [groei]
+        beschrijving: "Overstap van HAVO naar MBO Mediatechnology. Minder chaos, meer praktijk, beter passend bij zijn manier van leren."
+      - jaar: "2009"
+        type: [dal, familie]
+        beschrijving: "Vader raakt in een burn-out en ontwikkelt een paniekstoornis. Wordt uiteindelijk volledig arbeidsongeschikt. Extra druk op het gezinssysteem."
+      - jaar: "2011"
+        type: [piek, scouting]
+        beschrijving: "Start vrijwilligerswerk bij het CMS-team van Scouting Nederland (Team Internet). Combinatie van IT, inhoud en scouting."
+      - jaar: "2012"
+        type: [piek, werk]
+        beschrijving: "Afstuderen MBO, afstudeerstage bij Scouting Nederland en eerste baan."
+
+  gezondheidEnWerk:
+    titel: "Gezondheidscrises, werkervaringen en verlies (2013-2017)"
+    gebeurtenissen:
+      - jaar: "2013-2014"
+        type: [dal, familie]
+        beschrijving: "Moeder krijgt borstkanker en ook een TIA. Zeer zware periode voor het gezin."
+      - jaar: "2013-2014"
+        type: [werk]
+        beschrijving: "Korte opdrachten bij Adeko en Zeker Zichtbaar. Bij Ping Online een leuke opdracht: social media opzetten voor Yoga."
+      - jaar: "2015-2019"
+        type: [piek, dal, werk]
+        beschrijving: "Humble Buildings – veel verantwoordelijkheid, groei. Tegelijkertijd wordt het te veel; motivatie en energie raken uitgeput. Uiteindelijk ontslag."
+      - jaar: "2017"
+        type: [dal, familie]
+        beschrijving: "Overlijden van oma (moeders kant). Ouders en zus verhuizen naar Twente, wat boosheid en verliesgevoel oproept."
+
+  scoutingEnGroei:
+    titel: "Scoutingpieken, wisselende banen en groei (2018-2022)"
+    gebeurtenissen:
+      - jaar: "2018"
+        type: [piek, scouting]
+        beschrijving: "Vrijwilliger op Nawaka – landelijke waterscoutingpiek."
+      - jaar: "2019"
+        type: [dal, werk]
+        beschrijving: "Loyals – slechts 3 weken proeftijd, geen goede match. Bevestigt dat werkomgeving en cultuur essentieel zijn."
+      - jaar: "2019-2021"
+        type: [piek, dal, werk]
+        beschrijving: "Conclusion Learning Centers (CLC) – fijne projecten (o.a. SCS), maar uiteindelijk overtallig verklaard. Voelt onrechtvaardig."
+      - jaar: "2015-2019"
+        type: [scouting]
+        beschrijving: "Leiding bij de Waterwelpen."
+      - jaar: "2022"
+        type: [piek, scouting]
+        beschrijving: "Opnieuw vrijwilliger op Nawaka."
+      - jaar: "2022"
+        type: [groei, dal, werk]
+        beschrijving: "Kweekers – leert veel over design patterns en softwarearchitectuur, maar inwerkperiode zwaar en afstand groot."
+
+  diagnoseEnGilwell:
+    titel: "Diagnostiek, ASS, Gilwell en Sagu Tid (2022-2024)"
+    gebeurtenissen:
+      - jaar: "2022"
+        type: [groei, psychologie]
+        beschrijving: "Zoekt contact met Pit Baarn vanwege drempels in het dagelijks leven. Leidt tot uitgebreid autismeonderzoek."
+      - jaar: "2022-2023"
+        type: [dal, psychologie]
+        beschrijving: "Innerlijke weerstand tegen het label autisme vanwege pestverleden. Wil niet opnieuw 'anders' zijn."
+      - jaar: "2023"
+        type: [piek, scouting]
+        beschrijving: "Wereld Jamboree als IST. Wordt coördinator van het CMS-team bij Scouting Nederland."
+      - jaar: "2024"
+        type: [piek, psychologie]
+        beschrijving: "Officiële ASS-diagnose. Herkent zichzelf volledig. Geeft veel erkenning, rust en taal voor ervaringen."
+      - jaar: "2024"
+        type: [piek, scouting]
+        beschrijving: "Rondt Gilwell-traject af, ontvangt kralen, das en dasring. Verdieping in zelfreflectie, kernkwaliteiten en samenwerking."
+      - jaar: "2024"
+        type: [piek, creativiteit]
+        beschrijving: "Ontstaan van Sagu Tid als volwassen creatief universum. Verweeft taal, ritme, symboliek en emotie in verhalen en poëzie."
+      - jaar: "2024-2025"
+        type: [dal, familie, psychologie]
+        beschrijving: "Ouders herschrijven delen van levensverhaal en vroege ASS-signalen. Voelt onrechtvaardig, leidt tot spanning."
+
+  huidig:
+    titel: "Relatie, begeleiding, werk en politiek (2024-2025)"
+    gebeurtenissen:
+      - jaar: "april 2025"
+        type: [piek, psychologie]
+        beschrijving: "Start van thuisbegeleiding door Geeske (Kwintes). Werkt aan structuur, overzicht en betere afstemming op energieniveau."
+      - jaar: "10 mei 2025"
+        type: [piek, relatie]
+        beschrijving: "Begin van relatie met Fieke. Diepe klik, begrip en veiligheid."
+      - jaar: "23 mei 2025"
+        type: [dal, familie]
+        beschrijving: "Hoort dat moeder opnieuw kanker heeft."
+      - jaar: "26 juli - 3 augustus 2025"
+        type: [relatie, vakantie]
+        beschrijving: "Vakantie met Fieke naar Terschelling en Sneek. Wandelen, eiland, water en rust."
+      - jaar: "9 november 2025"
+        type: [piek, relatie]
+        beschrijving: "Gaan samenwonen. Nieuwe gezamenlijke structuur."
+      - jaar: "2025"
+        type: [dal, groei, werk]
+        beschrijving: "Verbeterplan/optimalisatieplan bij FinancialLease. Procedure niet zorgvuldig en niet ASS-vriendelijk. Tekent onder bezwaar – een assertiviteitsstap. Inhoudelijke ontwikkelpunten sluiten deels aan bij executieve uitdagingen (planning, taakorganisatie)."
+      - jaar: "2025"
+        type: [werk]
+        beschrijving: "Trots op projecten zoals Dealer Region Mapper en Flappi-koppelingen. Rol als ontwikkelaar en integratiespecialist is een belangrijke identiteitslaag."
+      - jaar: "2025"
+        type: [groei]
+        beschrijving: "Wordt actiever in lokale politiek (VoorBaarn → later Lijst van Grinsven). Wil bijdragen aan een eerlijkere, inclusieve gemeente."

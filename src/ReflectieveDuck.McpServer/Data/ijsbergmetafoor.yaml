@@ -1,0 +1,42 @@
+bron: "https://tuinstra.family/autisme-stoplicht-werk"
+
+titel: "IJsbergmetafoor — Begrijpen van gedrag en prikkels"
+beschrijving: >
+  De ijsbergmetafoor maakt duidelijk dat wat collega's en leidinggevenden zien slechts
+  een klein deel is van wat er speelt. Het grootste deel bevindt zich onder water: emoties,
+  prikkelverwerking, overtuigingen en energiebeheer. Deze lagen verklaren mijn zichtbare
+  gedrag in de verschillende stoplichtkleuren.
+
+bovenWater:
+  titel: "Boven water — Zichtbaar gedrag (wat collega's zien)"
+  perKleur:
+    groen: "Ik doe actief mee, reageer vriendelijk, lever zorgvuldig werk."
+    oranje: "Ik zucht vaker, reageer kort, lach minder, neem minder initiatief."
+    rood: "Ik trek me terug, zet Teams uit, maak korte opmerkingen, loop weg uit vergaderingen."
+    blauw: "Ik pak kleine taken op, werk trager, ben stiller, check vaker bij collega's."
+
+onderWater:
+  titel: "Onder water — Onzichtbare lagen (wat ik ervaar)"
+  lagen:
+    - naam: "Prikkelverwerking"
+      toelichting: "Geluid, licht, geur en warmte beïnvloeden mijn spanningsniveau sterk."
+    - naam: "Energiebeheer"
+      toelichting: "Mijn batterij raakt sneller leeg, ik heb hersteltijd nodig (blauw) en voorspelbare ritmes (groen)."
+    - naam: "Emoties"
+      toelichting: "Frustratie of onzekerheid bij oranje, machteloosheid en emotionele reacties bij rood."
+    - naam: "Overtuigingen"
+      toelichting: "Behoefte aan voorspelbaarheid, eerlijkheid en duidelijke afspraken (SCARF: certainty & fairness)."
+    - naam: "Sociale dynamiek"
+      toelichting: "In balans zoek ik verbinding en samenwerking; bij spanning trek ik me terug of reageer verdedigend."
+
+watDitBetekentInSamenwerking:
+  - "Reageer niet alleen op het zichtbare gedrag (bv. kortaf of teruggetrokken), maar begrijp dat dit een signaal is van de lagen eronder."
+  - "Vraag rustig naar wat ik nodig heb i.p.v. te focussen op de reactie zelf."
+  - "Structurele aanpassingen (rustige werkplek, voorspelbare communicatie, duidelijke taakverdeling) helpen de onderliggende lagen in balans te houden."
+  - "Dit voorkomt dat het gedrag boven water verkeerd geïnterpreteerd wordt ('onwil' of 'afstandelijk'), terwijl het in werkelijkheid gaat om overprikkeling of energiebeheer."
+
+reflectieveDuckHelptOm:
+  - "De onderwaterdelen zichtbaar te maken (feedback & reflectie)"
+  - "Patronen te herkennen (context & analyse)"
+  - "Je energie te monitoren (stoplichtplan)"
+  - "Productief te blijven zonder op te branden (productiviteit)"

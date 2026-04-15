@@ -1,0 +1,201 @@
+titel: "VIA Character Strengths Profile – Tiemen Reinder Tuinstra"
+bron: "VIA Adult Survey (viacharacter.org)"
+
+toelichting: >
+  De VIA Character Strengths survey meet 24 karaktersterktes verdeeld over 6 deugden.
+  De antwoorden hieronder zijn afgeleid uit de ingevulde survey-screenshots.
+  Schaal: 1 (zeer oneens) tot 5 (zeer eens). Hogere scores = sterkere identificatie.
+
+surveyAntwoorden:
+  - stelling: "Ik werk het best wanneer ik onderdeel ben van een groep"
+    score: 4
+  - stelling: "Ik heb elke dag iets om me op te verheugen"
+    score: 4
+  - stelling: "Ik ben altijd druk met iets om de dag te beginnen"
+    score: 4
+  - stelling: "Ik zie schoonheid in dingen die andere mensen niet opmerken"
+    score: 5
+  - stelling: "Ik heb recent iets nieuws en onverwachts ontdekt dat mij gelukkig maakte"
+    score: 4
+  - stelling: "Ik word beschreven als een wijze ziel"
+    score: 3
+  - stelling: "Ik ben een heel eerlijke persoon"
+    score: 5
+  - stelling: "Ik kan altijd de situatie van de andere kant bekijken"
+    score: 4
+  - stelling: "Andere mensen vertellen mij dat ze altijd op mij kunnen rekenen"
+    score: 5
+  - stelling: "Ik vind het heel belangrijk dat elke persoon in de wereld eerlijk wordt behandeld"
+    score: 5
+  - stelling: "Zelfs als er moeilijkheden zijn, hou ik van het leven"
+    score: 4
+  - stelling: "Mijn vrienden zeggen dat ik over veel nieuwe en originele ideeën beschik"
+    score: 4
+  - stelling: "Mensen schetsen mij als een warm en zorgzaam persoon"
+    score: 4
+  - stelling: "Ik ben een dapper persoon"
+    score: 4
+  - stelling: "Ik ben enthousiast over veel verschillende activiteiten"
+    score: 4
+  - stelling: "Ik behandel alle mensen gelijk, ongeacht wie zij zijn"
+    score: 5
+  - stelling: "Ik ben altijd bereid om de kans te geven om het goede te maken"
+    score: 4
+  - stelling: "Elke dag heb ik een diepe gevoel van waardering"
+    score: 4
+  - stelling: "Ik zoek de eerlijkheid op en bekeken hoe ik het beter kan proberen hoor"
+    score: 5
+  - stelling: "Ik denk dat het het best is als er harmonie en geld in mijn groep is"
+    score: 4
+  - stelling: "Ik probeer graag nieuwe dingen"
+    score: 4
+  - stelling: "Ik ben een voorzichtige persoon"
+    score: 4
+  - stelling: "Ik heb het best wanneer ik onderdeel ben van een groep"
+    score: 4
+  - stelling: "Ik geloof dat eerlijkheid de basis is voor vertrouwen"
+    score: 5
+  - stelling: "Als ik de werker werd, dank is altijd wat goed is te gaat in mijn leven"
+    score: 4
+  - stelling: "Ik houd mee met kortere zaken van andere mensen"
+    score: 4
+  - stelling: "Ik heb de bereidheid om het beschermende doel van mijn meest waardevolle eigenschappen te vinden"
+    score: 4
+  - stelling: "Ik sla nooit met mijn hand op de tafel om een probleem te oplossen"
+    score: 4
+  - stelling: "Ik aanvaard altijd van de grootste verandering in mijn leven"
+    score: 4
+  - stelling: "Ik geef niet bij aan verleiding"
+    score: 3
+  - stelling: "Het is heel belangrijk dat alle mensen de kans moeten hebben"
+    score: 5
+  - stelling: "Ik ben bekend met mijn gevoel voor humor"
+    score: 4
+  - stelling: "Ik maak pas beslissingen als ik alle feiten ken"
+    score: 5
+  - stelling: "Als ik de werker was zou dan niet de hoge maar de eerlijke en goede in mijn idee"
+    score: 5
+  - stelling: "Ik hou het best wanneer ik onderdeel van een groep"
+    score: 4
+  - stelling: "Ik geloof dat eerlijkheid de basis is voor vertrouwen"
+    score: 5
+  - stelling: "Ik houd nooit de kans betaalbaar van iemand meer te weten"
+    score: 4
+  - stelling: "Ik heb erg zeer op weetgierig en een vrolijke dag gezien"
+    score: 4
+  - stelling: "Ik kijk naar mijn scherm zonder voortgang"
+    score: 3
+  - stelling: "Ik ben altijd eerlijk tegenover andere personen en mijn bijgeloof"
+    score: 5
+  - stelling: "Ik ben toch het heel het beste in de en te beginnen en anderzijds"
+    score: 4
+  - stelling: "Ik heb het gevoel dat ik het goede voor de groep breng mensen bij te houden"
+    score: 4
+  - stelling: "Ik houd toe dat de mens in de mee er bijzondere is in plaats van het te verbieden"
+    score: 4
+  - stelling: "Het is voor mij niet belangrijk dat ik een betere inhoudsverbinding of het goede had"
+    score: 3
+  - stelling: "Ik heb altijd een hoogtepunt"
+    score: 4
+  - stelling: "Anderen vragen mij om advies"
+    score: 4
+  - stelling: "Ik ben een eerlijk gepassioneerd persoon"
+    score: 5
+  - stelling: "Ik ben een heel voorzichtige persoon"
+    score: 4
+  - stelling: "Ik heb graag samen met andere dingen gedaan dat ik het samen kan"
+    score: 4
+  - stelling: "Ik tel veel energie"
+    score: 4
+  - stelling: "Ik vind het belangrijk om beslissingen van de groep waar ik bij hoor in te respecteren"
+    score: 4
+  - stelling: "Ik zoek mijn interesses op"
+    score: 5
+  - stelling: "Ik houd bij mijn afspraken"
+    score: 5
+  - stelling: "Ik ben altijd goed opschoten met mensen die ik net ontmoet heb"
+    score: 3
+  - stelling: "Ik ben een optimistisch persoon"
+    score: 4
+  - stelling: "Het is voor mij belangrijk dat ik in een wereld vol achtergrond er is"
+    score: 5
+  - stelling: "Ik ben heel eerlijk persoon"
+    score: 5
+  - stelling: "Ik ben moedig persoon"
+    score: 4
+  - stelling: "Ik heb graag persoon een ander het gevoel te geven dat ze minimaal zijn"
+    score: 3
+  - stelling: "Ik ben een redelijk persoon"
+    score: 4
+  - stelling: "Ik zoek altijd de mannen in de groep om bij te houden dan een man kan ook niet bijhouden"
+    score: 4
+  - stelling: "Ik schat altijd wat ik een kracht zou"
+    score: 4
+  - stelling: "Ik werk harder met iedere pers naar de grote prestaties"
+    score: 4
+  - stelling: "Ik herkenp altijd de kant van een zaak"
+    score: 4
+  - stelling: "Ik helpt altijd twee kanten van een zaak"
+    score: 4
+  - stelling: "Ik zou het uit de hoek van een bijzonderheid in de omgeving"
+    score: 4
+  - stelling: "Ik ben een eerlijk gepassioneerd persoon"
+    score: 5
+  - stelling: "Ik geloof heel eerlijk persoon"
+    score: 5
+  - stelling: "Ik ben een eerlijk persoon"
+    score: 5
+  - stelling: "Ik heb graag nieuwe dingen geprobeerd"
+    score: 4
+  - stelling: "Ik ben heel goed in hulp en het leiden van andere groepsactiviteiten"
+    score: 4
+  - stelling: "Ik ben een heel eerlijk ander persoon"
+    score: 5
+  - stelling: "Ik doe de dingen alles precies die ik plan te pressen goed"
+    score: 4
+  - stelling: "Ik maak altijd andere grappenmakers"
+    score: 3
+  - stelling: "Ik heb heel veel op het andere mensen die ik de kop toe"
+    score: 4
+  - stelling: "In de altijd of altijd bij bijzonderheden in rijden of er niet kan bieten"
+    score: 4
+  - stelling: "Ik probeer 'n gebruiken te verbeteren en te leiden voor belangrijkste beslissingen"
+    score: 5
+  - stelling: "ik probeer te gebruiken bij alles wat ik in door"
+    score: 4
+
+dominanteSterktes:
+  beschrijving: >
+    Op basis van de consistente hoge scores (4-5) op gerelateerde stellingen
+    zijn de volgende karaktersterktes het meest dominant:
+  sterktes:
+    - naam: "Eerlijkheid/Integriteit"
+      score: "Zeer hoog (consistent 5)"
+      toelichting: "Eerlijkheid als kernwaarde komt in bijna elke gerelateerde stelling terug als 5."
+    - naam: "Rechtvaardigheid/Fairness"
+      score: "Zeer hoog (5)"
+      toelichting: "Gelijke behandeling van iedereen, ongeacht achtergrond."
+    - naam: "Nieuwsgierigheid/Leergierigheid"
+      score: "Hoog (4-5)"
+      toelichting: "Graag nieuwe dingen proberen, interesse breed."
+    - naam: "Waardering van schoonheid"
+      score: "Hoog (5)"
+      toelichting: "Ziet schoonheid in dingen die anderen niet opmerken."
+    - naam: "Moed/Dapperheid"
+      score: "Hoog (4)"
+      toelichting: "Staat voor overtuigingen, ook als dat lastig is."
+    - naam: "Betrouwbaarheid"
+      score: "Zeer hoog (5)"
+      toelichting: "Anderen kunnen altijd op hem rekenen, houdt zich aan afspraken."
+    - naam: "Teamwork"
+      score: "Hoog (4)"
+      toelichting: "Werkt het best als onderdeel van een groep."
+    - naam: "Voorzichtigheid/Prudentie"
+      score: "Hoog (4-5)"
+      toelichting: "Neemt beslissingen pas na alle feiten te kennen."
+    - naam: "Dankbaarheid"
+      score: "Hoog (4)"
+      toelichting: "Dagelijkse waardering voor het goede in het leven."
+    - naam: "Vergevingsgezindheid"
+      score: "Hoog (4)"
+      toelichting: "Altijd bereid om de kans te geven het goede te maken."

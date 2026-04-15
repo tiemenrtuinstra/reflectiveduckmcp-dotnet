@@ -1,0 +1,363 @@
+bron: "https://tuinstra.family/autisme-stoplicht-werk"
+
+kleuren:
+  groen:
+    label: "Groen — In balans"
+    energieBereik: "70-100"
+    beschrijving: >
+      Ik ben in balans: ik heb energie, overzicht en plezier in mijn werk.
+      Ik ervaar rust en structuur, kan goed schakelen tussen taken en voel me
+      ontspannen en beschikbaar voor samenwerking. Prikkels zijn hanteerbaar,
+      mijn creativiteit stroomt en ik voel verbinding met collega's.
+
+    eigenBeleving:
+      - "Werk gaat soepel en ik heb er plezier in"
+      - "Ik kan goed schakelen tussen taken"
+      - "Energie is stabiel, ik voel me rustig en fit"
+      - "Taken starten gaat vlot, zonder uitstelgedrag"
+      - "Creatieve ideeën komen makkelijk op"
+      - "Berichten via één kanaal (Teams óf mail) kan ik goed filteren en verwerken"
+
+    watAnderenZien:
+      - "Ik doe actief mee in vergaderingen"
+      - "Ik reageer normaal en vriendelijk"
+      - "Mijn werkplek is netjes"
+      - "Ik reageer vlot en vriendelijk in Teams-chat"
+      - "Mijn werk is zorgvuldig en op tijd af"
+
+    zelfondersteuning:
+      - "Gestructureerde planning met vaste werk-/pauzetijden"
+      - "Taakvisualisatie via checklists"
+      - "Bewegingspauzes"
+      - "Eén communicatiekanaal tegelijk (Teams OF email, niet beide)"
+
+    collegaondersteuning:
+      - "Vraag beschikbaarheid vóór je iemand aanspreekt"
+      - "Geef feedback via één reviewer"
+      - "Leg feedback uit en geef context"
+
+    scrumAgile:
+      - "Gebruik pair programming"
+      - "Houd stories behapbaar"
+      - "Handhaaf Definition of Ready/Done"
+
+    mindfulness:
+      - "Bodyscan (2 min)"
+      - "Elk uur een sensorische check-in"
+      - "Grounding via voeten-bewustzijn"
+      - "Ademverankering voor meetings"
+
+    scarf: "Alle domeinen positief (Status, Certainty, Autonomy, Relatedness, Fairness)"
+    learyRose: "Meewerkend & Helpend"
+    transitieSignaal: "Ik zit even op oranje"
+
+  oranje:
+    label: "Oranje — Signalen van spanning"
+    energieBereik: "40-69"
+    beschrijving: >
+      Ik merk de eerste signalen van spanning: prikkels vallen zwaarder, mijn hoofd
+      voelt voller en taken kosten meer moeite. Ik functioneer nog, maar het kost
+      extra energie en ik heb bewuste ondersteuning nodig.
+
+    eigenBeleving:
+      - "Geluid stoort me meer dan normaal"
+      - "Geur, warmte (vooral >22°C) of drukte vallen extra zwaar"
+      - "Mijn hoofd voelt vol, focus daalt en ik ga dingen uitstellen"
+      - "Ik raak sneller gefrustreerd als code of planning niet lukt"
+      - "Ik blijf langer hangen in details"
+      - "Als Teams én mail tegelijk actief zijn, voelt dit chaotisch"
+      - "Nieuwe taken of wijzigingen zonder schakeltijd voelen overweldigend"
+
+    watAnderenZien:
+      - "Zuchten"
+      - "Korte antwoorden"
+      - "Minder lachen"
+      - "Vaker weg van bureau"
+      - "Minder deelname aan meetings"
+
+    herkennenVanTriggers:
+      - "Geluidsovergevoeligheid neemt toe"
+      - "Temperatuur >22°C voelt zwaar"
+      - "Hoofd voelt vol"
+      - "Focus daalt"
+      - "Detailfixatie neemt toe"
+      - "Teams + email tegelijk voelt chaotisch"
+      - "Onverwachte taakwisselingen voelen overweldigend"
+
+    zelfondersteuning:
+      - "Eén taak tegelijk"
+      - "Schriftelijke taakbevestiging voor latere verwerking"
+      - "Korte notities over triggers"
+      - "Koptelefoon op"
+      - "Notificaties dempen"
+      - "Stille ruimte opzoeken"
+
+    fysiekeRegulatie:
+      - "2–5 minuten pauze"
+      - "Korte wandelrondje"
+      - "Praktische afleiding (water halen, plant verzorgen)"
+
+    collegaondersteuning:
+      - "Rustig praten"
+      - "Geen extra taken erbij"
+      - "Eén afgesproken communicatiekanaal"
+      - "Voorzichtig feedback geven"
+
+    scrumAgile:
+      - "Eén zichtbare taak in Jira"
+      - "Definition of Ready inroepen"
+      - "Daily Scrum verkorten of overslaan als het te veel wordt"
+      - "Retrospectives gebruiken om stress vroeg te signaleren"
+
+    mindfulness:
+      - "Box breathing"
+      - "5-4-3-2-1 sensorische grounding"
+      - "Handdruk-reset (10 seconden)"
+      - "Fidget focus"
+      - "Gedachten labelen zonder oordeel"
+
+    feedbackOntvangen: >
+      Feedback komt harder binnen — heeft uitleg en geduld nodig.
+      Kernkwaliteit is consciëntieusheid; valkuil is perfectionisme;
+      uitdaging is hulp vragen; allergie is slordigheid.
+
+    scarf: "Status en Certainty meest kwetsbaar"
+    learyRose: "Teruggetrokken & Verdedigend"
+    transitieSignaal: "Ik zit nu op rood"
+
+  rood:
+    label: "Rood — Overprikkeld"
+    energieBereik: "15-39"
+    beschrijving: >
+      Ik ben overprikkeld: mijn emmer is vol en ik kan niet meer goed nadenken
+      of communiceren. Prikkels zijn ondraaglijk en ik trek me terug of reageer
+      emotioneel. Alleen herstel heeft nu prioriteit.
+
+    eigenBeleving:
+      - "Alles is te veel (geluid, licht, mensen)"
+      - "Ik kan niet meer nadenken of beslissingen nemen"
+      - "Ik wil weg of alleen zijn (ineengedoken of in mijn eigen wereld)"
+      - "Ik word boos of emotioneel"
+      - "Ik kan me verliezen in hyperfocus op afleiding (toilet, browsen, gamen)"
+      - "Ik verlies overzicht"
+      - "Meerdere berichten via verschillende kanalen tegelijk zijn ondraaglijk"
+      - "Warmte of sterke geuren versterken de overprikkeling"
+
+    watAnderenZien:
+      - "Ik trek me terug of zet Teams uit"
+      - "Ik maak korte, gejaagde opmerkingen"
+      - "Ik loop weg uit vergaderingen"
+      - "Ik beweeg onrustig of friemel veel"
+      - "Ik zeg letterlijk dat het niet meer gaat"
+
+    triggersIntensiveren:
+      - "Geluid, licht, mensen: alles onverdraaglijk"
+      - "Meerdere berichten via verschillende kanalen tegelijk onverdraagbaar"
+      - "Warmte en sterke geuren versterken overload"
+
+    zelfondersteuning:
+      - "Stop direct met werken"
+      - "Teams/telefoon/email volledig uitzetten"
+      - "Naar huis of stille ruimte"
+      - "Water drinken"
+      - "Rust in beschermende houding"
+
+    fysiekHerstel:
+      - "Rustige wandeling buiten om spanning los te laten"
+      - "Bij herstel langer dan één werkdag: verzuimprocedure volgen"
+
+    collegaondersteuning:
+      - "Geen verdere vragen"
+      - "Alleen praktische hulp (iets halen, drankje brengen)"
+
+    managerHR:
+      - "Taken direct overnemen"
+      - "Veilige omgeving garanderen (zorgplicht)"
+      - "Herstelruimte regelen (niet standaard thuiswerken)"
+      - "Structurele oplossingen documenteren per WGBH/CZ"
+
+    scrumAgile:
+      - "Niet deelnemen aan ceremonies"
+      - "Taken in Jira op 'blocked' laten staan"
+      - "Scrum Master pauzeert meetings"
+      - "Geen sprint commitment druk — herstel heeft prioriteit"
+
+    mindfulnessSOS:
+      - "SOS meditatie"
+      - "Veilige bubbel visualisatie"
+      - "Verzwaringsdeken-sensatie voorstellen"
+      - "Monotoon achteruit tellen (bijv. 100 in stappen van 7)"
+      - "Focus op adem OF hartslag alleen (niet beide)"
+
+    feedback: "Geen feedback — alleen veiligheid en rust"
+    scarf: "Alle domeinen bedreigd"
+    learyRose: "Opstandig & Aanvallend of Teruggetrokken — anderen bieden 'Onder–Samen' (ondersteunende structuur) zonder feedback"
+    transitieSignaal: "Ik herstel nu, nog niet groen"
+
+  blauw:
+    label: "Blauw — Kwetsbaar herstel"
+    energieBereik: "0-14"
+    beschrijving: >
+      Ik ben in herstel: mijn energie komt langzaam terug, maar ik ben nog
+      kwetsbaar en snel uit balans. Ik heb voorspelbaarheid, rust en kleine
+      stappen nodig om weer stabiel groen te worden. Creativiteit en mindfulness
+      helpen bij dit herstel.
+
+    eigenBeleving:
+      - "Energie komt terug, maar ik ben nog kwetsbaar en sneller vermoeid"
+      - "Veranderingen zijn lastig en vragen extra schakeltijd"
+      - "Ik heb rust, regelmaat en voorspelbaarheid nodig"
+      - "Ik kan weer kleine taken uitvoeren, maar stel grotere taken uit als ze te groot lijken"
+      - "Ik voel me sneller onzeker of twijfelachtig"
+      - "Ik kan berichten verwerken, maar alleen via één kanaal per keer (Teams óf mail)"
+
+    watAnderenZien:
+      - "Kleine taken oppakken"
+      - "Trager tempo"
+      - "Stiller in meetings"
+      - "Vaker inchecken bij collega's"
+
+    zelfondersteuning:
+      - "Begin met makkelijke, behapbare taken"
+      - "Eerst Teams, dan later email (één kanaal per sessie)"
+      - "Jira subtaken voor granulariteit"
+      - "1–2 zinnen dagnotities over triggers en voortgang"
+
+    energieManagement:
+      - "Blijf pauzes nemen"
+      - "Neem sensorische signalen serieus"
+      - "Korte lunchpauze-wandeling"
+      - "Stretching aan bureau"
+      - "Vaste routines (wandeling voor/na lunch, koffiemomenten)"
+      - "Creatieve rust (schrijven, tuinieren, LEGO)"
+
+    herstelBuitenWerk:
+      - "Natuur"
+      - "Hobby's (wandelen, tuinieren, bordspellen, videogames)"
+      - "Reflectie om balans te bewaken"
+
+    reintegratie:
+      - "Reflecteer op wat er gebeurde en de triggers"
+      - "Evaluatiegesprek met manager en HR om effectiviteit aanpassingen te beoordelen"
+      - "Gefaseerde reïntegratie per personeelsbeleid"
+
+    collegaondersteuning:
+      - "Kleine, duidelijke taken"
+      - "Geduld bij niet-urgente berichten"
+      - "Feedback helder en bemoedigend via één reviewer"
+
+    scrumAgile:
+      - "Kleine subtaken eerst"
+      - "Definition of Done gebruiken voor duidelijkheid"
+      - "Korte of observerende Daily Scrum deelname"
+      - "Retrospectives om te identificeren wat hielp bij herstel"
+
+    mindfulness:
+      - "Bodyscan"
+      - "Rustige check-in per uur zonder oordeel"
+      - "Energiemeter-visualisatie"
+      - "Bewuste routine-handelingen"
+      - "30 seconden ogen dicht reset"
+      - "Korte ademmeditatie"
+      - "Dagelijks 1–2 zinnen journalen"
+
+    feedbackOntvangen: >
+      Kort en positief. Verwerkingstijd geven.
+      Kernkwaliteit keert terug (consciëntieusheid) maar perfectionisme steekt ook de kop op.
+      Uitdaging is opstapjes-groei; allergie blijft slordigheid.
+
+    scarf: "Status voorzichtig herstellend, Certainty nog fragiel, Autonomy beperkt, behoefte aan eerlijkheid en kleine overwinningen"
+    learyRose: "Volgend & Teruggetrokken — anderen bieden 'Boven–Samen' (zacht leiderschap, positieve bevestiging, duidelijke structuur)"
+    transitieSignaal: "Ik ben weer groen"
+
+codewoorden:
+  groenNaarOranje: "Ik zit even op oranje"
+  oranjeNaarRood: "Ik zit nu op rood"
+  roodNaarBlauw: "Ik herstel nu, nog niet groen"
+  blauwNaarGroen: "Ik ben weer groen"
+
+ijsbergMetafoor:
+  zichtbaar:
+    beschrijving: "Wat collega's zien (boven de waterlijn)"
+    perKleur:
+      groen: "Actieve deelname en vriendelijkheid"
+      oranje: "Zuchten en minder lachen"
+      rood: "Terugtrekking en korte opmerkingen"
+      blauw: "Trager tempo en vaker inchecken"
+  onzichtbaar:
+    beschrijving: "Wat er onder de waterlijn speelt"
+    lagen:
+      - naam: "Sensorische verwerking"
+        toelichting: "Geluid, licht, geur, warmte beïnvloeden stress direct"
+      - naam: "Energiemanagement"
+        toelichting: "Batterij raakt snel leeg, herstel nodig, voorspelbaar ritme vereist"
+      - naam: "Emoties"
+        toelichting: "Frustratie/onzekerheid bij oranje; machteloosheid/emotionele reactie bij rood"
+      - naam: "Overtuigingen"
+        toelichting: "Behoefte aan voorspelbaarheid, eerlijkheid, duidelijke afspraken (SCARF Certainty & Fairness)"
+      - naam: "Sociale dynamiek"
+        toelichting: "Zoekt verbinding in balans; trekt zich terug of verdedigt onder stress"
+  praktischeImplicatie: >
+    Reageer niet alleen op zichtbaar gedrag — vraag wat er onder nodig is.
+    Structurele aanpassingen (stille werkplek, voorspelbare communicatie, duidelijke taakverdeling)
+    stabiliseren de onderliggende lagen en voorkomen dat gedrag wordt geïnterpreteerd als
+    "onwil" terwijl het overbelasting of energie-uitputting weerspiegelt.
+
+kernkwadranten:
+  kernkwaliteit: "Consciëntieusheid"
+  valkuil: "Perfectionisme (kan taakstart verlammen)"
+  uitdaging: "Hulp vragen, kleine stappen nemen"
+  allergie: "Slordigheid (voelt extra hard)"
+
+scarf:
+  status: "Erkenning en eigenwaarde"
+  certainty: "Voorspelbaarheid en duidelijkheid"
+  autonomy: "Controle over eigen werk"
+  relatedness: "Verbinding met collega's"
+  fairness: "Consistentie en eerlijke afspraken"
+
+feedbackProtocol:
+  geven:
+    - "Rustig, concreet, met uitleg"
+    - "Eén contactpersoon per taak"
+    - "Koppel aan gedrag/werk, niet aan persoon"
+    - "Verwerkingstijd geven"
+    - "Benoem altijd wat goed gaat"
+  ontvangen:
+    - "Vraagt verduidelijking als iets onduidelijk is"
+    - "Voorkeur voor uitgestelde, doordachte reactie"
+    - "Autisme en pestgeschiedenis betekent dat feedback als harde kritiek kan landen"
+    - "Hoge sensorische belasting kan shutdown of emotionele reactie triggeren"
+    - "Rustige, voorspelbare setting helpt bij ontvangst"
+    - "Probeert feedback te koppelen aan kernkwaliteiten en uitdagingen"
+    - "Meerdere feedbackbronnen tegelijk voelen verwarrend — één contactpersoon werkt beter"
+    - "Impact verschilt per dag"
+
+rolverdeling:
+  collegas: "Dagelijks signaal en ondersteuning; rustige communicatie per afgesproken protocol"
+  scrumMaster: "Bewaak voorspelbare processen, monitor sensorische belasting, handhaaf consistente ceremonies"
+  productOwner: "Duidelijke stories, stabiele scope, voldoende refinement-tijd"
+  manager: "Monitor werkdruk, verdeel taken eerlijk, zorg voor geschikte werkplek en waarborg dat aanpassingen worden uitgevoerd"
+  hr: "Documenteer aanpassingen formeel, waarborg wettelijke naleving, faciliteer neurodiversiteitstraining"
+  vertrouwenspersoon: "Onafhankelijk contactpunt bij spanningen of misverstanden; ondersteun veilige communicatie"
+
+wettelijkKader:
+  wet: "WGBH/CZ (Wet gelijke behandeling op grond van handicap of chronische ziekte)"
+  verplichting: "Redelijke aanpassingen tenzij onevenredig belastend"
+  voorbeelden:
+    - "Sensorisch gereduceerde vaste werkplek"
+    - "Hulpmiddelen (koptelefoon, schermfilters)"
+    - "Voorspelbare roosters"
+    - "Periodieke check-in gesprekken"
+
+organisatie:
+  principes:
+    - "Nederlandse Vereniging voor Autisme (NVA) — ondersteuning is altijd individueel, gericht op versterking van autonomie, voorspelbaarheid en rust"
+    - "Hidden Disabilities Sunflower — discreet signaleren van niet-zichtbare beperking"
+    - "Great Place to Work waarden (vertrouwen, respect, eerlijkheid, trots, saamhorigheid)"
+  praktischeAfspraken:
+    - "Alle aanpassingen formeel gedocumenteerd in overleg met HR (waarborgt duidelijkheid en voorspelbaarheid)"
+    - "Periodieke evaluatie tijdens functioneringsgesprekken of retrospectives"
+    - "Geen negatieve carrièregevolgen voor gebruik van aanpassingen"
+    - "Aanpassingen passen zich aan als omstandigheden veranderen (kantoorindeling, teamstructuur)"
+    - "Vertrouwenspersoon beschikbaar voor preventieve of ondersteunende interventie"

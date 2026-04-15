@@ -1,0 +1,118 @@
+bron: "https://tuinstra.family/autisme-stoplicht-werk"
+
+titel: "Addendum — Werkstrategieën & Organisatorisch Kader"
+beschrijving: >
+  Dit addendum vormt een aanvulling op het persoonlijke stoplichtplan en heeft als doel om
+  structureel vast te leggen welke afspraken, randvoorwaarden en verantwoordelijkheden
+  bijdragen aan een duurzame samenwerking. Het document is opgesteld vanuit de uitgangspunten
+  van de Wet gelijke behandeling handicap of chronische ziekte (WGBH/CZ), in samenhang met
+  erkende richtlijnen van de Nederlandse Vereniging voor Autisme (NVA), het Hidden Disabilities
+  Sunflower-initiatief en de waarden van Great Place to Work.
+
+energieManagement:
+  - "90-minuten regel: maximale focustijd voor de meeste neurodivergente mensen"
+  - "40% meetings max: meer dan 40% vergadertijd leidt tot overbelasting"
+  - "2 onderbrekingen/uur max: meer onderbrekingen verstoren de focus disproportioneel"
+
+kernkwadranten:
+  kernkwaliteit: "Consciëntieusheid"
+  valkuil: "Perfectionisme (kan taakstart verlammen)"
+  uitdaging: "Hulp vragen, kleine stappen nemen"
+  allergie: "Slordigheid (voelt extra hard)"
+
+scarf:
+  beschrijving: "In oranje en rood zijn vooral status en certainty kwetsbaar."
+  domeinen:
+    status: "Erkenning en eigenwaarde"
+    certainty: "Voorspelbaarheid en duidelijkheid"
+    autonomy: "Controle over eigen werk"
+    relatedness: "Verbinding met collega's"
+    fairness: "Consistentie en eerlijke afspraken"
+
+learyRoos:
+  groen: "Meewerkend & Helpend — reageert op duidelijke, vriendelijke, voorspelbare anderen"
+  oranje: "Teruggetrokken & Verdedigend — heeft consistente ondersteuning nodig"
+  rood: "Opstandig/Aanvallend of Teruggetrokken — veilige structuur, geen feedback"
+  blauw: "Volgend & Teruggetrokken — zacht leiderschap en bevestiging"
+
+feedbackProtocol:
+  geven:
+    - "Rustig, concreet, met uitleg"
+    - "Eén aanspreekpunt per PR of taak — geen dubbele of tegenstrijdige feedback"
+    - "Feedback koppelen aan gedrag of werk, niet aan de persoon"
+    - "Genoeg tijd geven om te verwerken"
+    - "Altijd ook benoemen wat goed gaat"
+  ontvangen:
+    - "Ik vraag verduidelijking als feedback onduidelijk is"
+    - "Ik neem tijd en reageer liever later zorgvuldig"
+    - "Door mijn autisme en pestverleden kan feedback hard binnenkomen en voelen als kritiek"
+    - "Bij hoge prikkelbelasting kan ik dichtslaan of emotioneel reageren"
+    - "Rustige en voorspelbare setting helpt om feedback beter te ontvangen"
+    - "Ik probeer feedback te koppelen aan mijn kernkwaliteiten en uitdagingen"
+    - "Als feedback van meerdere kanten komt, geef ik aan dat dit verwarrend is — één aanspreekpunt werkt beter"
+    - "Ik probeer altijd met feedback om te gaan, maar de impact verschilt per dag"
+  kernkwadrantenWerken:
+    - "Kernkwaliteit: benoem waar ik goed in ben"
+    - "Valkuil: leg uit hoe dit kan doorschieten"
+    - "Uitdaging: geef richting hoe ik kwaliteiten beter kan inzetten"
+    - "Allergie: vermijd gedrag dat tegenovergesteld en kwetsend voelt"
+    - "Dit maakt feedback concreet en leerzaam, in plaats van bedreigend"
+
+codewoorden:
+  groenNaarOranje: "Ik zit even op oranje"
+  oranjeNaarRood: "Ik zit nu op rood"
+  roodNaarBlauw: "Ik herstel nu, nog niet groen"
+  blauwNaarGroen: "Ik ben weer groen"
+
+rolverdeling:
+  collegas: "Signaleren en ondersteunen in de dagelijkse samenwerking; rustig communiceren en feedback geven volgens afspraken."
+  scrumMaster: "Bewaakt voorspelbare processen en ritmes; monitort prikkelbelasting; houdt ceremonies voorspelbaar."
+  productOwner: "Stelt stabiele scope en duidelijke prioriteiten."
+  manager: "Bewaakt werkdruk, verdeelt taken evenwichtig, organiseert een passende werkplek en zorgt dat aanpassingen worden uitgevoerd."
+  hr: "Legt afspraken structureel vast, borgt naleving van wetgeving en faciliteert trainingen over neurodiversiteit en inclusie."
+  vertrouwenspersoon: "Fungeert als onafhankelijk aanspreekpunt bij spanningen of onbegrip, ondersteunt in gesprekken en bevordert veilige communicatie."
+
+wettelijkKader:
+  wet: "WGBH/CZ (Wet gelijke behandeling op grond van handicap of chronische ziekte)"
+  verplichting: "Verplicht werkgevers redelijke aanpassingen te doen, tenzij dit een onevenredige belasting vormt."
+  uitgangspunt: "Gelijke kansen. Ik moet mijn werk onder redelijke omstandigheden kunnen doen, net als collega's zonder beperking, ook al heb ik soms andere randvoorwaarden nodig."
+  voorbeelden:
+    - "Prikkelarme (vaste) werkplek"
+    - "Hulpmiddelen zoals koptelefoon of schermfilter"
+    - "Voorspelbare planning"
+    - "Periodieke voortgangsgesprekken ter evaluatie"
+
+toepassing:
+  thuiswerken: "Is niet altijd passend; kan juist leiden tot onderprikkeling of stress (bijv. burenlawaai). Nadruk op passende aanpassingen op kantoor."
+  aanpassingenInOverleg: "Aanpassingen moeten altijd besproken en afgestemd worden, nooit eenzijdig opgelegd."
+  stoplichtplan: "Dient als praktisch hulpmiddel om signalen, behoeften en afspraken inzichtelijk te houden."
+
+personeelshandboek:
+  - "Arbo & welzijn: werkgever heeft zorgplicht voor een veilige en gezonde werkplek; de WGBH/CZ valt hier direct onder."
+  - "Thuiswerkregeling: is een standaardoptie, maar mag niet als enige maatregel worden gezien; er moet altijd gekeken worden naar de beste oplossing per persoon."
+  - "Vertrouwenspersoon: expliciet beschikbaar bij vragen of klachten over werkdruk, communicatie of bejegening; ook inzetbaar bij onbegrip over aanpassingen."
+  - "Gesprekken met HR of leidinggevende: regelingen en afwijkingen worden schriftelijk vastgelegd; dit borgt afspraken rond prikkelregulatie en voorkomt misverstanden."
+
+praktischeAfspraken:
+  - "Transparantie: alle aanpassingen worden vastgelegd in overleg met HR, zodat er duidelijkheid en voorspelbaarheid is."
+  - "Herziening: afspraken worden regelmatig geëvalueerd, bijvoorbeeld tijdens functioneringsgesprekken of retrospectives."
+  - "Bescherming: gebruikmaken van aanpassingen mag nooit negatieve gevolgen hebben voor functioneren of beoordeling."
+  - "Flexibiliteit: afspraken worden aangepast als omstandigheden veranderen (bijv. kantoorindeling of teamstructuur)."
+  - "Veiligheid: de vertrouwenspersoon kan altijd preventief of ondersteunend worden ingeschakeld."
+
+cultuurEnInclusie:
+  principes:
+    - "Nederlandse Vereniging voor Autisme (NVA) — ondersteuning is altijd individueel, gericht op versterking van autonomie, voorspelbaarheid en rust"
+    - "Hidden Disabilities Sunflower — discreet signaleren van niet-zichtbare beperking"
+    - "Great Place to Work waarden (vertrouwen, respect, eerlijkheid, trots, saamhorigheid)"
+  acties:
+    - "Bewustwording vergroten over autisme en onzichtbare beperkingen"
+    - "Medewerkers met neurodiversiteit faciliteren door prikkelarme ruimtes, vaste overlegmomenten en duidelijke communicatie"
+    - "Trainingen organiseren over inclusieve samenwerking en neurodiversiteit"
+    - "Het onderwerp opnemen in teamgesprekken, HR-beleid of leiderschapsontwikkeling"
+
+samenvattend: >
+  Het doel van dit addendum is niet om uitzonderingen te creëren, maar om heldere, redelijke
+  en structurele afspraken te maken die passen bij een moderne, inclusieve en lerende organisatie.
+  Door inzicht, samenwerking en wederzijds respect te combineren, kunnen zowel ikzelf als de
+  organisatie optimaal functioneren.
