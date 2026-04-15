@@ -400,4 +400,98 @@ public class ReflectieModuleTools
             - "Hoe zou je dit bespreken met een vertrouwenspersoon?"
             """;
     }
+
+    [McpServerTool(Name = "module_ijsberg_analyse"),
+     Description("Analyseer een situatie met de IJsberg-metafoor. Ontdek wat zichtbaar was (gedrag) vs. wat onzichtbaar speelde (prikkels, energie, emoties, overtuigingen, sociale dynamiek). Helpt om misinterpretatie te voorkomen.")]
+    public string IjsbergAnalyse(
+        [Description("Beschrijf de situatie die je wilt analyseren")] string situatie,
+        [Description("Stoplichtkleur op dat moment: groen/oranje/rood/blauw (optioneel)")] string? kleur = null)
+    {
+        var kleurContext = kleur?.ToLowerInvariant() switch
+        {
+            "groen" => "Op groen: actieve deelname, vriendelijke reacties, georganiseerde werkplek.",
+            "oranje" => "Op oranje: zuchten, korte antwoorden, minder lachen, vaker weg van bureau.",
+            "rood" => "Op rood: terugtrekking, Teams offline, korte opmerkingen, wegloop uit meetings.",
+            "blauw" => "Op blauw: trager tempo, stiller in meetings, vaker inchecken bij collega's.",
+            _ => "Kleur onbekend — probeer te bepalen welke kleur je had op dat moment."
+        };
+
+        return $"""
+            # IJsberg-Analyse
+
+            ## Situatie
+            {situatie}
+
+            ## Jouw stoplichtkleur
+            {kleurContext}
+
+            ---
+
+            ## Boven water — Wat was zichtbaar?
+            Dit is wat anderen zagen. Vul in:
+
+            ### Jouw zichtbare gedrag
+            - Wat deed je? (bijv. kortaf reageren, weglopen, zuchten, stil zijn)
+            - Wat zei je? (of juist niet?)
+            - Hoe was je houding/lichaamstaal?
+
+            ### Wat anderen waarschijnlijk interpreteerden
+            - Hoe kan een collega dit gedrag gelezen hebben?
+            - Welke conclusie trekken mensen vaak bij dit gedrag?
+            - Risico op misinterpretatie: "onwil" of "desinteresse" terwijl het overbelasting is?
+
+            ---
+
+            ## Onder water — Wat speelde er echt?
+            Dit is wat niemand kon zien. Analyseer per laag:
+
+            ### 1. Prikkelverwerking
+            - Welke zintuiglijke prikkels speelden er? (geluid, licht, warmte, drukte)
+            - Was er sprake van meerdere prikkelbronnen tegelijk?
+            - Had je je koptelefoon/oordoppen bij je?
+
+            ### 2. Energiebeheer
+            - Hoe vol was je emmer op dat moment (0-100)?
+            - Had je genoeg pauzes genomen?
+            - Was er een lange periode zonder herstel voorafgaand?
+
+            ### 3. Emoties
+            - Wat voelde je echt? (frustratie, onzekerheid, machteloosheid, angst)
+            - Was er een specifieke trigger voor die emotie?
+            - Hoe verschilt het gevoelde van het getoonde?
+
+            ### 4. Overtuigingen
+            - Welke SCARF-domeinen werden geraakt?
+              - Status: voelde je je niet erkend?
+              - Certainty: was er onvoorspelbaarheid?
+              - Autonomy: verloor je controle?
+              - Relatedness: voelde je je buitengesloten?
+              - Fairness: was iets oneerlijk?
+            - Welke vaste overtuiging speelde mee? (bijv. "ik mag niet om hulp vragen")
+
+            ### 5. Sociale dynamiek
+            - Was je in verbindingsmodus of verdedigingsmodus?
+            - Leary Roos: meewerkend, teruggetrokken, of opstandig?
+            - Wat had je nodig van de ander?
+
+            ---
+
+            ## De kloof
+            ```
+            Wat anderen zagen:    [...]
+            Wat er werkelijk was: [...]
+            De kloof ertussen:    [...]
+            ```
+
+            ## Wat helpt om de kloof te dichten?
+            - Welke informatie hadden anderen nodig om je beter te begrijpen?
+            - Kun je het transitie-codewoord gebruiken om je kleur te communiceren?
+            - Welke structurele aanpassing zou dit in de toekomst voorkomen?
+
+            ## Reflectievragen
+            - "Wat zou er veranderd zijn als je collega wist wat er onder water speelde?"
+            - "Welke laag onder water had de meeste invloed op je gedrag boven water?"
+            - "Wat is één ding dat je kunt doen zodat deze situatie minder zwaar wordt?"
+            """;
+    }
 }

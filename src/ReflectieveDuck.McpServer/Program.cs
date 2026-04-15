@@ -116,7 +116,7 @@ var mcpBuilder = builder.Services
             Version = "1.0.0"
         };
     })
-    // ── Tools (44 stuks) ──────────────────────────────────────────────────
+    // ── Tools (45 stuks) ──────────────────────────────────────────────────
     .WithTools<StoplichtTools>()       // 4 tools: status, geschiedenis, update, vergelijk
     .WithTools<FeedbackTools>()        // 5 tools: toevoegen, lijst, zoeken, statistieken, tags
     .WithTools<ReflectieTools>()       // 1 tool:  reflectievragen genereren
@@ -125,9 +125,9 @@ var mcpBuilder = builder.Services
     .WithTools<ResourceTools>()        // 8 tools: ijsberg, addendum, asswijzer, reflectie-assistent, lifemap, sterktes, health, config
     .WithTools<ProductiviteitTools>()  // 4 tools: focus start/stop, energie log, analyse
     .WithTools<WellbeingTools>()       // 9 tools: tips, codewoord, kernkwadrant, emmer_*, rolverdeling, volledig
-    .WithTools<ReflectieModuleTools>() // 8 tools: ToM, EF, sociale coherentie, dating, duck-modus, retrospective, kernkwadrant_analyse
-    // ── Prompts (14 stuks) ────────────────────────────────────────────────
-    .WithPrompts<WellbeingPrompts>()   // 5 prompts: emmer-check, reflectiesessie, check-in, SCARF, weekoverzicht
+    .WithTools<ReflectieModuleTools>() // 9 tools: ToM, EF, sociale coherentie, dating, duck-modus, retrospective, kernkwadrant_analyse, ijsberg_analyse
+    // ── Prompts (15 stuks) ────────────────────────────────────────────────
+    .WithPrompts<WellbeingPrompts>()   // 6 prompts: emmer-check, reflectiesessie, check-in, SCARF, weekoverzicht, diepe analyse
     .WithPrompts<AgentPrompts>();      // 9 agents: wellbeing coach, debug duck, retro facilitator, sociale navigator, energie manager, feedback coach, autisme coach, werk coach, prikkel adviseur
 
 if (transport == "http")
@@ -183,7 +183,7 @@ if (transport == "http")
             <p><strong>OAuth metadata:</strong>
                 <a href="/.well-known/openid-configuration">/.well-known/openid-configuration</a></p>
             <p><strong>DCR:</strong> <code>POST /connect/register</code></p>
-            <h3>44 tools + 14 prompts/agents</h3>
+            <h3>45 tools + 15 prompts/agents</h3>
             <ul class="tools">
                 <li>stoplicht_status</li><li>stoplicht_geschiedenis</li>
                 <li>stoplicht_update</li><li>stoplicht_vergelijk</li>
@@ -208,6 +208,7 @@ if (transport == "http")
                 <li>module_sociale_coherentie</li><li>module_dating</li>
                 <li>module_reflectieve_duck</li><li>module_retrospective</li>
                 <li>module_kernkwadrant_analyse</li>
+                <li>module_ijsberg_analyse</li>
             </ul>
         </body></html>
         """, "text/html"));
@@ -227,8 +228,8 @@ if (transport == "http")
         mcpEndpoint = "/mcp",
         oauthMetadata = "/.well-known/openid-configuration",
         dcr = "/connect/register",
-        tools = 44,
-        prompts = 14
+        tools = 45,
+        prompts = 15
     }));
 
     // MED-1 fix: MCP OAuth Protected Resource metadata (RFC 9728)

@@ -1,0 +1,324 @@
+theoryOfMind:
+  titel: "Theory of Mind Reflectie"
+  beschrijving: >
+    Theory of Mind helpt je te begrijpen dat anderen andere kennis, emoties en intenties hebben.
+    Bij autisme is deze perspectiefneming vaak minder intuïtief — expliciete reflectie helpt.
+  stappen:
+    - titel: "Stap 1: Observatie"
+      vragen:
+        - "Wat zag je de ander doen of zeggen?"
+        - "Wat was de context (tijd, plaats, omstandigheden)?"
+    - titel: "Stap 2: Interpretatie"
+      vragen:
+        - "Hoe denk je dat de ander zich voelde?"
+        - "Wat zou de ander bedoeld kunnen hebben?"
+        - "Welke informatie had de ander die jij niet had (of omgekeerd)?"
+    - titel: "Stap 3: Eigen reactie"
+      vragen:
+        - "Wat voelde jij bij deze situatie?"
+        - "Welke aanname maakte je over de intentie van de ander?"
+        - "Is er een alternatieve verklaring mogelijk?"
+    - titel: "Stap 4: Verbinding"
+      vragen:
+        - "Hoe zou je dit kunnen bespreken met de ander?"
+        - "Wat zou je willen dat de ander begrijpt over jouw beleving?"
+  reflectievragen:
+    - "Hoe denk je dat de ander dit bedoelde?"
+    - "Welke informatie had jij niet die de ander wel had?"
+    - "Als je dit vanuit hun ogen bekijkt, wat zie je dan?"
+
+executieveFuncties:
+  titel: "Executieve Functies Hulp"
+  beschrijving: >
+    EF-problemen bij autisme betekenen niet onvermogen, maar een andere informatie-verwerkingsstijl.
+    Externe structuur helpt totdat interne planning weer stabiel is.
+  stappen:
+    - titel: "Stap 1: Decompositie"
+      vragen:
+        - "Wat is de allereerste concrete handeling?"
+        - "Welke stappen komen daarna?"
+        - "Waar zijn afhankelijkheden?"
+    - titel: "Stap 2: Tijd- en energie-inschatting"
+      vragen:
+        - "Hoeveel minuten kost elke subtaak?"
+        - "Welke subtaken kosten het meeste energie?"
+        - "Welke kun je doen als je energie laag is?"
+    - titel: "Stap 3: Volgorde bepalen"
+      vragen:
+        - "Begin met de taak die het minste beslisenergie kost"
+        - "Plan energievretende taken in je groene momenten"
+        - "Plan pauzes tussen schakelmomenten (min. 5 minuten)"
+    - titel: "Stap 4: Externe geheugensteun"
+      vragen:
+        - "Schrijf elke stap op (checklist, Jira subtaken, post-it)"
+        - "Gebruik een timer voor focusblokken (max 90 minuten)"
+        - "Zet een alarm voor de eerste stap"
+  reflectievragen:
+    - "Wat is het allerkleinste eerste stapje dat je kunt zetten?"
+    - "Welke subtaak geeft het meeste voldoening als die af is?"
+    - "Heb je hulp nodig bij een van de stappen? Van wie?"
+
+socialeCoherentie:
+  titel: "Sociale Coherentie Reflectie"
+  beschrijving: >
+    Sociale coherentie gaat over het herkennen van patronen en betekenis in sociale contexten.
+    We analyseren wat je zag, hoorde en voelde — en koppelen gedrag aan context.
+  stappen:
+    - titel: "Stap 1: Observatie (feiten)"
+      vragen:
+        - "Wat zag je precies gebeuren?"
+        - "Wat werd er gezegd (letterlijk)?"
+        - "Welke non-verbale signalen merkte je op?"
+    - titel: "Stap 2: Context"
+      vragen:
+        - "Waar en wanneer gebeurde dit?"
+        - "Wat was de relatie tussen de betrokken personen?"
+        - "Was er tijdsdruk, stress of andere invloeden?"
+    - titel: "Stap 3: Betekenis"
+      vragen:
+        - "Welke verklaring geef jij aan het gedrag?"
+        - "Zijn er alternatieve verklaringen mogelijk?"
+        - "Welk patroon herken je (komt dit vaker voor)?"
+    - titel: "Stap 4: Mogelijkheden (geen fouten)"
+      vragen:
+        - "Wat had je anders kunnen doen?"
+        - "Wat ging er goed in jouw reactie?"
+        - "Wat zou je meenemen naar een vergelijkbare situatie?"
+  voorbeeld: "Iemand is kortaf in een meeting → In plaats van 'Hij is boos op mij': 'Kan het zijn dat hij gehaast was door een deadline?'"
+  reflectievragen:
+    - "Hoe zou de situatie eruitzien vanuit het standpunt van de ander?"
+    - "Welk patroon herken je uit eerdere ervaringen?"
+    - "Wat zou je aan een vertrouwenspersoon vertellen over deze situatie?"
+
+dating:
+  titel: "Dating & Communicatie Analyse"
+  stappen:
+    - titel: "1. Observatie"
+      vragen:
+        - "Wat ging er goed in deze interactie?"
+        - "Wat gaf spanning of onzekerheid?"
+        - "Welke reactie had je verwacht vs. wat er werkelijk gebeurde?"
+    - titel: "2. Gevoel"
+      vragen:
+        - "Hoe voelde je je tijdens de interactie?"
+        - "Hoe voelde je je achteraf?"
+        - "Welk gevoel wil je benoemen?"
+    - titel: "3. Behoefte"
+      vragen:
+        - "Wat had je nodig op dat moment?"
+        - "Wat wilde je dat de ander begreep?"
+        - "Welke verbinding zocht je?"
+    - titel: "4. Communicatiestijl"
+      vragen:
+        - "Was je bericht/reactie te lang of te kort?"
+        - "Was de toon duidelijk voor de ander?"
+        - "Hoe kun je je boodschap vloeiender overbrengen?"
+    - titel: "5. Volgende stap"
+      vragen:
+        - "Wil je reageren? Zo ja, wat zou een rustige, open reactie zijn?"
+        - "Is er iets dat je eerst wilt laten bezinken?"
+        - "Kun je een vertrouwenspersoon vragen om mee te lezen?"
+  reflectievragen:
+    - "Wat deed de reactie van de ander met jou?"
+    - "Welke verwachting had je op dat moment?"
+    - "Welke kwaliteit van jou kwam naar voren — en hoe kun je die doseren?"
+
+reflectieveDuck:
+  titel: "Reflectieve Duck Modus 🦆"
+  werkwijze:
+    - "Eén vraag per keer — houdt het gesprek rustig"
+    - "Korte, concrete zinnen"
+    - "Focus op structuur, niet op emotie"
+    - "Afsluiten met een samenvatting en volgende stap"
+  submodi:
+    debug:
+      titel: "Submodus: Debug"
+      beschrijving: "Tunnelvisie doorbreken tijdens foutopsporing."
+      stappen:
+        - titel: "Stap 1: Stop en adem"
+          vragen:
+            - "Hoe lang ben je al bezig met dit probleem?"
+            - "Heb je een pauze genomen in het laatste uur?"
+        - titel: "Stap 2: Herformuleer"
+          vragen:
+            - "Beschrijf het probleem in één zin"
+            - "Wat is het verwachte gedrag vs. het werkelijke gedrag?"
+        - titel: "Stap 3: Aannames checken"
+          vragen:
+            - "Wat was je eerste aanname?"
+            - "Welke aannames heb je NIET gecontroleerd?"
+            - "Wat zou er anders zijn als je aanname niet klopt?"
+        - titel: "Stap 4: Versimpel"
+          vragen:
+            - "Kun je het probleem reproduceren met minimale code?"
+            - "Wat is de kleinste verandering die het probleem introduceert?"
+            - "Heb je de error message werkelijk gelezen (niet gescand)?"
+        - titel: "Stap 5: Rubber duck"
+          vragen:
+            - "Leg het probleem uit aan mij, stap voor stap"
+            - "Waar aarzel je in je uitleg? Dat is waarschijnlijk de bug."
+    projectstart:
+      titel: "Submodus: Projectstart"
+      beschrijving: "Structuur aanbrengen bij een nieuw project."
+      stappen:
+        - titel: "Stap 1: Scope definiëren"
+          vragen:
+            - "Wat is het minimale werkende resultaat (MVP)?"
+            - "Wat hoort er NIET bij voor nu?"
+        - titel: "Stap 2: Architectuur schetsen"
+          vragen:
+            - "Welke componenten heb je nodig?"
+            - "Welke bestaande code/patronen kun je hergebruiken?"
+            - "Waar zitten de risico's?"
+        - titel: "Stap 3: Takenlijst"
+          vragen:
+            - "Breek het project op in taken van max 90 minuten"
+            - "Bepaal de volgorde (wat moet eerst?)"
+            - "Markeer taken die hulp nodig hebben"
+        - titel: "Stap 4: Eerste actie"
+          vragen:
+            - "Wat is het allereerste bestand dat je aanmaakt?"
+            - "Zet een timer op 25 minuten en begin"
+    reflectie:
+      titel: "Submodus: Reflectie-toon"
+      beschrijving: "Combineer technische reflectie met sociale context."
+      stappen:
+        - titel: "Technisch"
+          vragen:
+            - "Wat heb je geleerd van dit probleem?"
+            - "Welke aanname bleek verkeerd?"
+        - titel: "Sociaal"
+          vragen:
+            - "Hoe zou je dit uitleggen aan een collega?"
+            - "Is er iemand die je om hulp zou kunnen vragen?"
+        - titel: "Groei"
+          vragen:
+            - "Waar ben je trots op in deze oplossing?"
+            - "Wat zou je volgende keer anders doen?"
+  reflectievragen:
+    - "Wat zie je nu dat je eerder niet zag?"
+    - "Hoe zorg je dat je niet vastloopt in perfectie?"
+    - "Waar ben je trots op in je aanpak tot nu toe?"
+
+kernkwadrantAnalyse:
+  titel: "Kernkwadrant Analyse"
+  beschrijving: >
+    Analyseer een situatie met het Kernkwadrantenmodel van Ofman.
+    Ontdek welke kernkwaliteit speelde, waar die doorsloeg (valkuil),
+    wat de groeirichting is (uitdaging) en wat je triggerde (allergie).
+  kwadranten:
+    - kwaliteit: "Consciëntieusheid"
+      valkuil: "Perfectionisme"
+      uitdaging: "Hulp vragen"
+      allergie: "Slordigheid"
+    - kwaliteit: "Loyaliteit"
+      valkuil: "Oververantwoordelijkheid"
+      uitdaging: "Loslaten, vertrouwen"
+      allergie: "Onverschilligheid"
+    - kwaliteit: "Eerlijkheid"
+      valkuil: "Botte directheid"
+      uitdaging: "Tact en timing"
+      allergie: "Hypocrisie"
+    - kwaliteit: "Enthousiasme"
+      valkuil: "Overintensiteit"
+      uitdaging: "Geduld, ruimte laten"
+      allergie: "Passiviteit"
+    - kwaliteit: "Betrouwbaarheid"
+      valkuil: "Zelfopoffering"
+      uitdaging: "Grenzen stellen"
+      allergie: "Onbetrouwbaarheid"
+    - kwaliteit: "Nieuwsgierigheid"
+      valkuil: "Verstrooiing/afdwaling"
+      uitdaging: "Focus houden"
+      allergie: "Desinteresse"
+    - kwaliteit: "Rechtvaardigheid"
+      valkuil: "Rigiditeit in regels"
+      uitdaging: "Flexibiliteit"
+      allergie: "Vriendjespolitiek"
+    - kwaliteit: "Moed"
+      valkuil: "Roekeloosheid"
+      uitdaging: "Reflectie voor actie"
+      allergie: "Lafheid"
+  stappen:
+    - titel: "Stap 1: Welke kwaliteit speelde hier?"
+      vraag: "Welke van jouw sterke kanten was actief in deze situatie?"
+    - titel: "Stap 2: Sloeg de kwaliteit door?"
+      vragen:
+        - "Herken je de valkuil in deze situatie?"
+        - "Wat was het effect op jezelf? Op de ander?"
+        - "Was je je ervan bewust op het moment zelf?"
+    - titel: "Stap 3: Wat is de groeirichting?"
+      vragen:
+        - "Welke uitdaging past bij de kwaliteit die doorsloeg?"
+        - "Wat zou een klein, concreet eerste stapje zijn?"
+        - "Wie zou je hierbij kunnen helpen?"
+    - titel: "Stap 4: Wat triggerde je?"
+      vragen:
+        - "Was er gedrag van de ander dat je allergisch maakte?"
+        - "Is dat gedrag het tegenovergestelde van jouw kernkwaliteit?"
+        - "Kun je het gedrag van de ander loskoppelen van jouw reactie?"
+    - titel: "Stap 5: Verbinding met je stoplichtplan"
+      vragen:
+        - "Welke kleur had je toen dit gebeurde?"
+        - "Had je emmerniveau invloed op hoe heftig je reageerde?"
+        - "Zou je anders gereageerd hebben in het groen?"
+  reflectievragen:
+    - "Welke kwaliteit van jou zat onder de frustratie?"
+    - "Wat is de gezonde uitdaging die je nu kunt oefenen?"
+    - "Hoe zou je dit bespreken met een vertrouwenspersoon?"
+
+ijsbergAnalyse:
+  titel: "IJsberg-Analyse"
+  beschrijving: >
+    Analyseer een situatie via de ijsbergmetafoor: wat was zichtbaar (boven water)
+    vs. wat speelde er werkelijk (onder water). Helpt om misinterpretatie te voorkomen.
+  bovenWater:
+    titel: "Boven water — Wat was zichtbaar?"
+    vragen:
+      - "Wat deed je? (bijv. kortaf reageren, weglopen, zuchten, stil zijn)"
+      - "Wat zei je? (of juist niet?)"
+      - "Hoe was je houding/lichaamstaal?"
+    interpretatie:
+      - "Hoe kan een collega dit gedrag gelezen hebben?"
+      - "Welke conclusie trekken mensen vaak bij dit gedrag?"
+      - "Risico op misinterpretatie: 'onwil' of 'desinteresse' terwijl het overbelasting is?"
+  onderWater:
+    titel: "Onder water — Wat speelde er echt?"
+    lagen:
+      - naam: "Prikkelverwerking"
+        vragen:
+          - "Welke zintuiglijke prikkels speelden er? (geluid, licht, warmte, drukte)"
+          - "Was er sprake van meerdere prikkelbronnen tegelijk?"
+          - "Had je je koptelefoon/oordoppen bij je?"
+      - naam: "Energiebeheer"
+        vragen:
+          - "Hoe vol was je emmer op dat moment (0-100)?"
+          - "Had je genoeg pauzes genomen?"
+          - "Was er een lange periode zonder herstel voorafgaand?"
+      - naam: "Emoties"
+        vragen:
+          - "Wat voelde je echt? (frustratie, onzekerheid, machteloosheid, angst)"
+          - "Was er een specifieke trigger voor die emotie?"
+          - "Hoe verschilt het gevoelde van het getoonde?"
+      - naam: "Overtuigingen (SCARF)"
+        vragen:
+          - "Status: voelde je je niet erkend?"
+          - "Certainty: was er onvoorspelbaarheid?"
+          - "Autonomy: verloor je controle?"
+          - "Relatedness: voelde je je buitengesloten?"
+          - "Fairness: was iets oneerlijk?"
+          - "Welke vaste overtuiging speelde mee? (bijv. 'ik mag niet om hulp vragen')"
+      - naam: "Sociale dynamiek"
+        vragen:
+          - "Was je in verbindingsmodus of verdedigingsmodus?"
+          - "Leary Roos: meewerkend, teruggetrokken, of opstandig?"
+          - "Wat had je nodig van de ander?"
+  kloof:
+    vragen:
+      - "Welke informatie hadden anderen nodig om je beter te begrijpen?"
+      - "Kun je het transitie-codewoord gebruiken om je kleur te communiceren?"
+      - "Welke structurele aanpassing zou dit in de toekomst voorkomen?"
+  reflectievragen:
+    - "Wat zou er veranderd zijn als je collega wist wat er onder water speelde?"
+    - "Welke laag onder water had de meeste invloed op je gedrag boven water?"
+    - "Wat is één ding dat je kunt doen zodat deze situatie minder zwaar wordt?"

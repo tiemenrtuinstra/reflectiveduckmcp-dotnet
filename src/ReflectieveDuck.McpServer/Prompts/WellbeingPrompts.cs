@@ -114,4 +114,33 @@ public sealed class WellbeingPrompts
             Houd het positief en constructief. Begin met wat goed ging.
             """);
     }
+
+    [McpServerPrompt, Description("Analyseer een situatie met zowel de IJsberg-metafoor als het Kernkwadrantenmodel. Combineert zichtbaar/onzichtbaar gedrag met kwaliteit/valkuil/uitdaging/allergie.")]
+    public static IEnumerable<ChatMessage> DiepeAnalyse(
+        [Description("Beschrijf kort de situatie")] string situatie = "")
+    {
+        yield return new ChatMessage(ChatRole.User, $"""
+            Doe een diepe analyse van deze situatie met twee modellen:
+
+            Situatie: {(string.IsNullOrWhiteSpace(situatie) ? "[Ik beschrijf hem zodadelijk]" : situatie)}
+
+            Gebruik de tools in deze volgorde:
+
+            1. Check mijn stoplichtkleur (stoplicht_status)
+            2. Doe een IJsberg-analyse (module_ijsberg_analyse) — wat was zichtbaar vs. onzichtbaar
+            3. Doe een Kernkwadrant-analyse (module_kernkwadrant_analyse) — welke kwaliteit/valkuil speelde
+            4. Haal mijn triggers op (emmer_triggers) om te checken of bekende prikkels meespeelden
+            5. Check het SCARF-model via het addendum (resource_addendum)
+
+            Combineer de analyses tot:
+            - Wat collega's zagen (boven water) en hoe ze het interpreteerden
+            - Wat er werkelijk speelde (onder water) per laag
+            - Welke kernkwaliteit actief was en waar die doorsloeg
+            - Welke SCARF-domeinen geraakt werden
+            - Eén concreet leerpunt
+            - Eén concrete actie voor de volgende keer
+
+            Sla de analyse op als feedback met tags "ijsberg,kernkwadrant,analyse".
+            """);
+    }
 }
