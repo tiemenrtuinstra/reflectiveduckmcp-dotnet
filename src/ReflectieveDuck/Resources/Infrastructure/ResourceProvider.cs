@@ -105,33 +105,16 @@ public class ResourceProvider
     }
 
     /// <summary>
-    /// Haal de kernkwadranten op (consciëntieusheid, perfectionisme, hulp vragen, slordigheid).
+    /// Haal de kernkwadranten op uit modules.yaml.
     /// </summary>
-    public string GetKernkwadranten()
-    {
-        return """
-            Kernkwadranten (Ofman):
+    public string GetKernkwadranten() => ExtractYamlSection(
+        ReadEmbeddedYaml("modules.yaml"), "kernkwadrantAnalyse:", null);
 
-            ┌────────────────────┐     ┌────────────────────┐
-            │  KERNKWALITEIT     │     │  VALKUIL           │
-            │  Consciëntieusheid │ ──► │  Perfectionisme    │
-            │                    │     │  (kan taakstart     │
-            │                    │     │   verlammen)        │
-            └────────────────────┘     └────────────────────┘
-                     │                          │
-                     ▼                          ▼
-            ┌────────────────────┐     ┌────────────────────┐
-            │  UITDAGING         │     │  ALLERGIE          │
-            │  Hulp vragen,      │     │  Slordigheid       │
-            │  kleine stappen    │     │  (voelt extra hard) │
-            │  nemen             │     │                    │
-            └────────────────────┘     └────────────────────┘
-
-            • Kernkwaliteit → Valkuil: consciëntieusheid schiet door naar perfectionisme
-            • Uitdaging: de balans herstellen door hulp te vragen en kleine stappen te nemen
-            • Allergie: slordigheid bij anderen triggert je extra vanwege je eigen hoge standaard
-            """;
-    }
+    /// <summary>
+    /// Haal een specifieke module op uit modules.yaml.
+    /// </summary>
+    public string GetModule(string moduleNaam) => ExtractYamlSection(
+        ReadEmbeddedYaml("modules.yaml"), $"{moduleNaam}:", null);
 
     public async Task<HealthDto> GetHealthAsync(CancellationToken ct = default)
     {

@@ -206,6 +206,26 @@ kernkwadrantAnalyse:
     Analyseer een situatie met het Kernkwadrantenmodel van Ofman.
     Ontdek welke kernkwaliteit speelde, waar die doorsloeg (valkuil),
     wat de groeirichting is (uitdaging) en wat je triggerde (allergie).
+  visueel: |
+    ┌────────────────────┐     ┌────────────────────┐
+    │  KERNKWALITEIT     │     │  VALKUIL           │
+    │  (sterke kant)     │ ──► │  (doorgeslagen)    │
+    └────────────────────┘     └────────────────────┘
+             │                          │
+             ▼                          ▼
+    ┌────────────────────┐     ┌────────────────────┐
+    │  UITDAGING         │     │  ALLERGIE          │
+    │  (groeirichting)   │     │  (trigger)         │
+    └────────────────────┘     └────────────────────┘
+
+    Kernkwaliteit → Valkuil: je sterke kant schiet door
+    Uitdaging: de balans herstellen
+    Allergie: het tegenovergestelde van je kwaliteit triggert je extra
+  persoonlijkHoofdkwadrant:
+    kernkwaliteit: "Consciëntieusheid"
+    valkuil: "Perfectionisme (kan taakstart verlammen)"
+    uitdaging: "Hulp vragen, kleine stappen nemen"
+    allergie: "Slordigheid (voelt extra hard door hoge eigen standaard en pestverleden)"
   kwadranten:
     - kwaliteit: "Consciëntieusheid"
       valkuil: "Perfectionisme"
