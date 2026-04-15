@@ -204,15 +204,19 @@ Write-Host "====================================================" -ForegroundCol
 Write-Host "  Installatie voltooid!"                             -ForegroundColor Green
 Write-Host "====================================================" -ForegroundColor Green
 Write-Host ""
-Write-Host "Beschikbare tools (27):" -ForegroundColor Cyan
-Write-Host "  Stoplichtplan:   stoplicht_status, stoplicht_geschiedenis, stoplicht_update, stoplicht_vergelijk"
-Write-Host "  Feedback:        feedback_toevoegen, feedback_lijst, feedback_zoeken, feedback_statistieken, feedback_tags"
+Write-Host "Beschikbare: 44 tools + 14 prompts/agents" -ForegroundColor Cyan
+Write-Host "  Stoplicht:       status, geschiedenis, update, vergelijk, tips, codewoord, rolverdeling, volledig"
+Write-Host "  Feedback:        toevoegen, lijst, zoeken, statistieken, tags"
 Write-Host "  Reflectie:       reflectie_vragen"
 Write-Host "  Analyse:         code_analyse, stacktrace_analyse"
-Write-Host "  Context:         context_patronen, context_inzichten, context_volledig"
-Write-Host "  Resources:       resource_ijsberg, resource_addendum, resource_asswijzer, resource_reflectie_assistent,"
-Write-Host "                   resource_lifemap, resource_sterktes, resource_health, resource_config"
+Write-Host "  Context:         patronen, inzichten, volledig, dashboard"
+Write-Host "  Resources:       ijsberg, addendum, asswijzer, reflectie_assistent, lifemap, sterktes, health, config"
 Write-Host "  Productiviteit:  focus_start, focus_stop, energie_log, productiviteit_analyse"
+Write-Host "  Wellbeing:       kernkwadrant, emmer_strategieen, emmer_anderen, emmer_triggers, emmer_reactie"
+Write-Host "  Modules:         theory_of_mind, executieve_functies, sociale_coherentie, dating, reflectieve_duck,"
+Write-Host "                   retrospective, kernkwadrant_analyse"
+Write-Host "  Agents:          AutismeCoach, WellbeingCoach, DebugDuck, RetrospectiveFacilitator,"
+Write-Host "                   SocialeNavigator, EnergieManager, FeedbackCoach, WerkCoach, PrikkelAdviseur"
 Write-Host ""
 Write-Host "Database: %LOCALAPPDATA%\ReflectieveDuck\local.db" -ForegroundColor Gray
 Write-Host "Project:  $projectPath" -ForegroundColor Gray

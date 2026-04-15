@@ -20,15 +20,18 @@ public class ContextTools
     private readonly IQueryHandler<GetPatternsQuery, IReadOnlyList<PatternDto>> _patterns;
     private readonly IQueryHandler<GetInsightsQuery, IReadOnlyList<InsightDto>> _insights;
     private readonly IQueryHandler<GetFullContextQuery, ReflectieContextDto> _fullContext;
+    private readonly IQueryHandler<GetDashboardQuery, DashboardDto> _dashboard;
 
     public ContextTools(
         IQueryHandler<GetPatternsQuery, IReadOnlyList<PatternDto>> patterns,
         IQueryHandler<GetInsightsQuery, IReadOnlyList<InsightDto>> insights,
-        IQueryHandler<GetFullContextQuery, ReflectieContextDto> fullContext)
+        IQueryHandler<GetFullContextQuery, ReflectieContextDto> fullContext,
+        IQueryHandler<GetDashboardQuery, DashboardDto> dashboard)
     {
         _patterns = patterns;
         _insights = insights;
         _fullContext = fullContext;
+        _dashboard = dashboard;
     }
 
     [McpServerTool(Name = "context_patronen"),
@@ -52,6 +55,14 @@ public class ContextTools
     public async Task<string> GetFullContext()
     {
         var result = await _fullContext.HandleAsync(new GetFullContextQuery());
+        return JsonSerializer.Serialize(result, JsonOptions);
+    }
+
+    [McpServerTool(Name = "dashboard"),
+     Description("Haal het complete dashboard op in één call: stoplichtkleur, energielevel, actieve focus sessie, energie-trend, feedback van vandaag, patronen en gepersonaliseerd advies.")]
+    public async Task<string> GetDashboard()
+    {
+        var result = await _dashboard.HandleAsync(new GetDashboardQuery());
         return JsonSerializer.Serialize(result, JsonOptions);
     }
 }

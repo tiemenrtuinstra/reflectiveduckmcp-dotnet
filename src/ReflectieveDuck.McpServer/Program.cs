@@ -116,12 +116,12 @@ var mcpBuilder = builder.Services
             Version = "1.0.0"
         };
     })
-    // ── Tools (43 stuks) ──────────────────────────────────────────────────
+    // ── Tools (44 stuks) ──────────────────────────────────────────────────
     .WithTools<StoplichtTools>()       // 4 tools: status, geschiedenis, update, vergelijk
     .WithTools<FeedbackTools>()        // 5 tools: toevoegen, lijst, zoeken, statistieken, tags
     .WithTools<ReflectieTools>()       // 1 tool:  reflectievragen genereren
     .WithTools<AnalyseTools>()         // 2 tools: code analyse, stacktrace analyse
-    .WithTools<ContextTools>()         // 3 tools: patronen, inzichten, volledig
+    .WithTools<ContextTools>()         // 4 tools: patronen, inzichten, volledig, dashboard
     .WithTools<ResourceTools>()        // 8 tools: ijsberg, addendum, asswijzer, reflectie-assistent, lifemap, sterktes, health, config
     .WithTools<ProductiviteitTools>()  // 4 tools: focus start/stop, energie log, analyse
     .WithTools<WellbeingTools>()       // 9 tools: tips, codewoord, kernkwadrant, emmer_*, rolverdeling, volledig
@@ -183,7 +183,7 @@ if (transport == "http")
             <p><strong>OAuth metadata:</strong>
                 <a href="/.well-known/openid-configuration">/.well-known/openid-configuration</a></p>
             <p><strong>DCR:</strong> <code>POST /connect/register</code></p>
-            <h3>43 tools + 14 prompts/agents</h3>
+            <h3>44 tools + 14 prompts/agents</h3>
             <ul class="tools">
                 <li>stoplicht_status</li><li>stoplicht_geschiedenis</li>
                 <li>stoplicht_update</li><li>stoplicht_vergelijk</li>
@@ -194,7 +194,7 @@ if (transport == "http")
                 <li>feedback_tags</li><li>reflectie_vragen</li>
                 <li>code_analyse</li><li>stacktrace_analyse</li>
                 <li>context_patronen</li><li>context_inzichten</li>
-                <li>context_volledig</li>
+                <li>context_volledig</li><li>dashboard</li>
                 <li>resource_ijsberg</li><li>resource_addendum</li>
                 <li>resource_asswijzer</li><li>resource_reflectie_assistent</li>
                 <li>resource_lifemap</li><li>resource_sterktes</li>
@@ -227,7 +227,7 @@ if (transport == "http")
         mcpEndpoint = "/mcp",
         oauthMetadata = "/.well-known/openid-configuration",
         dcr = "/connect/register",
-        tools = 43,
+        tools = 44,
         prompts = 14
     }));
 

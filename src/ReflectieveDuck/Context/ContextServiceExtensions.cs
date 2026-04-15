@@ -22,6 +22,9 @@ public static class ContextServiceExtensions
         services.AddScoped<IQueryHandler<GetFullContextQuery, ReflectieContextDto>,
             GetFullContextQueryHandler>();
 
+        services.AddScoped<IQueryHandler<GetDashboardQuery, DashboardDto>,
+            GetDashboardQueryHandler>();
+
         return services;
     }
 }
