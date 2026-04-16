@@ -1,11 +1,13 @@
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
+using OpenIddict.Abstractions;
 using OpenIddict.Validation.AspNetCore;
 using ReflectieveDuck.Extensions;
 using ReflectieveDuck.McpServer.Prompts;
 using ReflectieveDuck.McpServer.Tools;
 using ReflectieveDuck.Shared.Infrastructure.LocalDb;
+using static OpenIddict.Abstractions.OpenIddictConstants;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -162,9 +164,47 @@ using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<LocalDbContext>();
     db.Database.EnsureCreated();
-
-    // HIGH-3 fix: WAL mode voor veilige writes bij Fly.io auto_stop
     db.Database.ExecuteSqlRaw("PRAGMA journal_mode=WAL;");
+
+    // ── Seed OAuth client ───────────────────────────────────────────────────
+    // Maakt een vaste client aan als die nog niet bestaat.
+    // Client ID/secret configureerbaar via environment variables.
+    var clientId = Environment.GetEnvironmentVariable("OAUTH_CLIENT_ID") ?? "reflectieve-duck-client";
+    var clientSecret = Environment.GetEnvironmentVariable("OAUTH_CLIENT_SECRET") ?? "duck-secret-change-me";
+
+    var manager = scope.ServiceProvider.GetRequiredService<IOpenIddictApplicationManager>();
+    if (await manager.FindByClientIdAsync(clientId) is null)
+    {
+        await manager.CreateAsync(new OpenIddictApplicationDescriptor
+        {
+            ClientId = clientId,
+            ClientSecret = clientSecret,
+            DisplayName = "Reflectieve Duck — Vaste Client",
+            ClientType = ClientTypes.Confidential,
+            ConsentType = ConsentTypes.Implicit,
+            Permissions =
+            {
+                Permissions.Endpoints.Authorization,
+                Permissions.Endpoints.Token,
+                Permissions.GrantTypes.AuthorizationCode,
+                Permissions.GrantTypes.RefreshToken,
+                Permissions.ResponseTypes.Code,
+                $"{Permissions.Prefixes.Scope}mcp"
+            },
+            RedirectUris =
+            {
+                // Claude.ai callback
+                new Uri("https://claude.ai/api/mcp/auth_callback"),
+                // ChatGPT callback
+                new Uri("https://chatgpt.com/connector_platform_oauth_redirect"),
+                // Localhost voor development
+                new Uri("http://localhost:3000/callback"),
+                new Uri("http://localhost:8080/callback")
+            }
+        });
+
+        app.Logger.LogInformation("OAuth seed client aangemaakt: {ClientId}", clientId);
+    }
 }
 
 // ── HTTP pipeline ───────────────────────────────────────────────────────────
