@@ -28,6 +28,13 @@ builder.WebHost.UseSentry(o =>
     o.Release = "reflectieve-duck@1.0.0";
 });
 
+// Sentry als log provider — Warning+ logs worden Sentry breadcrumbs, Error+ worden events
+builder.Logging.AddSentry(o =>
+{
+    o.MinimumEventLevel = LogLevel.Error;       // Error en Critical → Sentry events
+    o.MinimumBreadcrumbLevel = LogLevel.Warning; // Warning+ → breadcrumbs bij het volgende event
+});
+
 // Fly.io TLS termination: forward het originele HTTPS scheme
 builder.Services.Configure<ForwardedHeadersOptions>(options =>
 {
