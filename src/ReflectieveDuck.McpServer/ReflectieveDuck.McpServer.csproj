@@ -13,6 +13,7 @@
     <PackageReference Include="ModelContextProtocol" Version="1.1.0" />
     <PackageReference Include="ModelContextProtocol.AspNetCore" Version="1.1.0" />
     <PackageReference Include="OpenIddict.AspNetCore" Version="6.*" />
+    <PackageReference Include="Sentry.AspNetCore" Version="5.*" />
   </ItemGroup>
 
   <ItemGroup>

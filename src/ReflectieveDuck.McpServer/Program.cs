@@ -9,6 +9,17 @@ using ReflectieveDuck.Shared.Infrastructure.LocalDb;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// ── Sentry — error monitoring ───────────────────────────────────────────────
+builder.WebHost.UseSentry(o =>
+{
+    o.Dsn = Environment.GetEnvironmentVariable("SENTRY_DSN")
+        ?? "https://6be89257f7b27d2c56783b9c57386e39@o4511228687417344.ingest.de.sentry.io/4511228714877008";
+    o.TracesSampleRate = 0.2; // 20% van requests voor performance monitoring
+    o.SendDefaultPii = false; // Geen persoonlijke data naar Sentry
+    o.Environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "production";
+    o.Release = "reflectieve-duck@1.0.0";
+});
+
 // Fly.io TLS termination: forward het originele HTTPS scheme
 builder.Services.Configure<ForwardedHeadersOptions>(options =>
 {
@@ -160,6 +171,7 @@ using (var scope = app.Services.CreateScope())
 if (transport == "http")
 {
     app.UseForwardedHeaders();
+    app.UseSentryTracing();
     app.UseCors();
     app.UseAuthentication();
     app.UseAuthorization();
