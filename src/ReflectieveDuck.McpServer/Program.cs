@@ -159,8 +159,8 @@ var mcpBuilder = builder.Services
 if (transport == "http")
 {
     mcpBuilder.WithHttpTransport();
-    if (authEnabled)
-        mcpBuilder.AddAuthorizationFilters();
+    // Altijd registreren — [Authorize] metadata vereist de filter, ook als auth uit staat
+    mcpBuilder.AddAuthorizationFilters();
 }
 else
 {
