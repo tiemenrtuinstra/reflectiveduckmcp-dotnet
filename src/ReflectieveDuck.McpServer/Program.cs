@@ -231,8 +231,13 @@ if (transport == "http")
 {
     app.UseForwardedHeaders();
     app.UseSentryTracing();
+    app.Use(async (ctx, next) =>
+    {
+        ctx.Response.Headers["X-Robots-Tag"] = "noindex, nofollow";
+        await next();
+    });
     app.UseCors();
-    app.UseStaticFiles(); // wwwroot/logo.png
+    app.UseStaticFiles(); // wwwroot/logo.png, robots.txt
     app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers(); // OAuth endpoints: /authorize, /token, /connect/register
@@ -248,6 +253,7 @@ if (transport == "http")
     app.MapGet("/", () => Results.Content(
         "<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"utf-8\"><title>Reflectieve Duck MCP</title>"
         + "<link rel=\"icon\" href=\"/logo.png\" type=\"image/png\">"
+        + "<meta name=\"robots\" content=\"noindex, nofollow\">"
         + "<style>body{font-family:system-ui,sans-serif;max-width:600px;margin:60px auto;padding:0 20px;color:#1a1a1a;text-align:center}"
         + "h1{color:#2d5016}a{color:#2d7d46}code{background:#f0f0f0;padding:2px 6px;border-radius:3px}"
         + ".tools{columns:2;text-align:left}.tools li{break-inside:avoid}</style></head><body>"
