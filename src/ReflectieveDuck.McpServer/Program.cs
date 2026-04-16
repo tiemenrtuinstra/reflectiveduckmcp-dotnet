@@ -38,6 +38,11 @@ var transport = args.FirstOrDefault(a => a.StartsWith("--transport="))
     ?? Environment.GetEnvironmentVariable("MCP_TRANSPORT")
     ?? "stdio";
 
+// ── Feature flags ───────────────────────────────────────────────────────
+var authEnabled = !string.Equals(
+    Environment.GetEnvironmentVariable("AUTH_ENABLED"), "false",
+    StringComparison.OrdinalIgnoreCase);
+
 // In stdio mode: geen Kestrel URLs binden
 if (transport != "http")
     builder.WebHost.UseUrls();
@@ -154,7 +159,8 @@ var mcpBuilder = builder.Services
 if (transport == "http")
 {
     mcpBuilder.WithHttpTransport();
-    mcpBuilder.AddAuthorizationFilters();
+    if (authEnabled)
+        mcpBuilder.AddAuthorizationFilters();
 }
 else
 {
@@ -307,8 +313,10 @@ if (transport == "http")
         resource_name = "Reflectieve Duck MCP Server"
     }));
 
-    // ── MCP endpoint (beveiligd — HIGH-5 fix) ──────────────────────────────
-    app.MapMcp("/mcp").RequireAuthorization();
+    // ── MCP endpoint ──────────────────────────────────────────────────────
+    var mcp = app.MapMcp("/mcp");
+    if (authEnabled)
+        mcp.RequireAuthorization();
 }
 
 app.Run();
