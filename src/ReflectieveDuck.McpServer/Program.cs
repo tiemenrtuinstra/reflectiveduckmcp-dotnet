@@ -2,8 +2,10 @@ using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 using OpenIddict.Abstractions;
+using OpenIddict.Server;
 using OpenIddict.Validation.AspNetCore;
 using ReflectieveDuck.Extensions;
+using ReflectieveDuck.McpServer.Auth;
 using ReflectieveDuck.McpServer.Prompts;
 using ReflectieveDuck.McpServer.Tools;
 using ReflectieveDuck.Shared.Infrastructure.LocalDb;
@@ -100,6 +102,12 @@ builder.Services.AddOpenIddict()
         options.AddEphemeralEncryptionKey()
             .AddEphemeralSigningKey();
 
+        // Dynamische redirect URI registratie voor ChatGPT/Claude.ai
+        // Voegt onbekende maar vertrouwde redirect URIs toe aan de client VÓÓR validatie
+        options.AddEventHandler<OpenIddictServerEvents.ValidateAuthorizationRequestContext>(builder =>
+            builder.UseScopedHandler<DynamicRedirectUriHandler>()
+                .SetOrder(int.MinValue + 100)); // Vóór alle standaard validators
+
         // Sta onversleutelde token requests toe (achter Fly.io TLS terminator)
         if (transport == "http")
             options.UseAspNetCore().DisableTransportSecurityRequirement();
@@ -173,38 +181,43 @@ using (var scope = app.Services.CreateScope())
     var clientSecret = Environment.GetEnvironmentVariable("OAUTH_CLIENT_SECRET") ?? "duck-secret-change-me";
 
     var manager = scope.ServiceProvider.GetRequiredService<IOpenIddictApplicationManager>();
-    if (await manager.FindByClientIdAsync(clientId) is null)
-    {
-        await manager.CreateAsync(new OpenIddictApplicationDescriptor
-        {
-            ClientId = clientId,
-            ClientSecret = clientSecret,
-            DisplayName = "Reflectieve Duck — Vaste Client",
-            ClientType = ClientTypes.Confidential,
-            ConsentType = ConsentTypes.Implicit,
-            Permissions =
-            {
-                Permissions.Endpoints.Authorization,
-                Permissions.Endpoints.Token,
-                Permissions.GrantTypes.AuthorizationCode,
-                Permissions.GrantTypes.RefreshToken,
-                Permissions.ResponseTypes.Code,
-                $"{Permissions.Prefixes.Scope}mcp"
-            },
-            RedirectUris =
-            {
-                // Claude.ai callback
-                new Uri("https://claude.ai/api/mcp/auth_callback"),
-                // ChatGPT callback
-                new Uri("https://chatgpt.com/connector_platform_oauth_redirect"),
-                // Localhost voor development
-                new Uri("http://localhost:3000/callback"),
-                new Uri("http://localhost:8080/callback")
-            }
-        });
+    var existing = await manager.FindByClientIdAsync(clientId);
 
-        app.Logger.LogInformation("OAuth seed client aangemaakt: {ClientId}", clientId);
-    }
+    // Verwijder bestaande client om redirect URIs te updaten
+    if (existing is not null)
+        await manager.DeleteAsync(existing);
+
+    await manager.CreateAsync(new OpenIddictApplicationDescriptor
+    {
+        ClientId = clientId,
+        ClientSecret = clientSecret,
+        DisplayName = "Reflectieve Duck — Vaste Client",
+        ClientType = ClientTypes.Confidential,
+        ConsentType = ConsentTypes.Implicit,
+        Permissions =
+        {
+            Permissions.Endpoints.Authorization,
+            Permissions.Endpoints.Token,
+            Permissions.GrantTypes.AuthorizationCode,
+            Permissions.GrantTypes.RefreshToken,
+            Permissions.ResponseTypes.Code,
+            $"{Permissions.Prefixes.Scope}mcp"
+        },
+        RedirectUris =
+        {
+            // Claude.ai callbacks
+            new Uri("https://claude.ai/api/mcp/auth_callback"),
+            // ChatGPT callbacks — dynamisch pad per connector
+            new Uri("https://chatgpt.com/connector_platform_oauth_redirect"),
+            new Uri("https://chatgpt.com/connector/oauth/4ojo4kbdwkpG"),
+            new Uri("https://chat.openai.com/aip/plugin-oauth/callback"),
+            // Localhost voor development
+            new Uri("http://localhost:3000/callback"),
+            new Uri("http://localhost:8080/callback")
+        }
+    });
+
+    app.Logger.LogInformation("OAuth seed client aangemaakt/bijgewerkt: {ClientId}", clientId);
 }
 
 // ── HTTP pipeline ───────────────────────────────────────────────────────────
