@@ -239,53 +239,37 @@ if (transport == "http")
 
     // ── Publieke endpoints ──────────────────────────────────────────────────
 
-    app.MapGet("/", () => Results.Content("""
-        <!DOCTYPE html>
-        <html lang="nl">
-        <head><meta charset="utf-8"><title>Reflectieve Duck MCP</title>
-        <link rel="icon" href="/logo.png" type="image/png">
-        <style>
-            body { font-family: system-ui, sans-serif; max-width: 600px; margin: 60px auto; padding: 0 20px; color: #1a1a1a; }
-            h1 { color: #2d5016; } a { color: #2d7d46; } code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; }
-            .tools { columns: 2; } .tools li { break-inside: avoid; }
-        </style></head>
-        <body>
-            <img src="/logo.png" alt="Reflectieve Duck" width="120" style="display:block;margin:0 auto 15px">
-            <h1>Reflectieve Duck MCP Server</h1>
-            <p>Welzijns-MCP voor neurodivergente developers.</p>
-            <p><strong>MCP endpoint:</strong> <code>/mcp</code> (OAuth beveiligd)</p>
-            <p><strong>OAuth metadata:</strong>
-                <a href="/.well-known/openid-configuration">/.well-known/openid-configuration</a></p>
-            <p><strong>DCR:</strong> <code>POST /connect/register</code></p>
-            <h3>45 tools + 15 prompts/agents</h3>
-            <ul class="tools">
-                <li>stoplicht_status</li><li>stoplicht_geschiedenis</li>
-                <li>stoplicht_update</li><li>stoplicht_vergelijk</li>
-                <li>stoplicht_tips</li><li>stoplicht_codewoord</li>
-                <li>stoplicht_rolverdeling</li><li>stoplicht_volledig</li>
-                <li>feedback_toevoegen</li><li>feedback_lijst</li>
-                <li>feedback_zoeken</li><li>feedback_statistieken</li>
-                <li>feedback_tags</li><li>reflectie_vragen</li>
-                <li>code_analyse</li><li>stacktrace_analyse</li>
-                <li>context_patronen</li><li>context_inzichten</li>
-                <li>context_volledig</li><li>dashboard</li>
-                <li>resource_ijsberg</li><li>resource_addendum</li>
-                <li>resource_asswijzer</li><li>resource_reflectie_assistent</li>
-                <li>resource_lifemap</li><li>resource_sterktes</li>
-                <li>resource_health</li><li>resource_config</li>
-                <li>focus_start</li><li>focus_stop</li>
-                <li>energie_log</li><li>productiviteit_analyse</li>
-                <li>kernkwadrant</li><li>emmer_strategieen</li>
-                <li>emmer_anderen</li><li>emmer_triggers</li>
-                <li>emmer_reactie</li>
-                <li>module_theory_of_mind</li><li>module_executieve_functies</li>
-                <li>module_sociale_coherentie</li><li>module_dating</li>
-                <li>module_reflectieve_duck</li><li>module_retrospective</li>
-                <li>module_kernkwadrant_analyse</li>
-                <li>module_ijsberg_analyse</li>
-            </ul>
-        </body></html>
-        """, "text/html"));
+    var authSection = authEnabled
+        ? "<p><strong>MCP endpoint:</strong> <code>/mcp</code> (OAuth beveiligd)</p>"
+          + "<p><strong>OAuth metadata:</strong> <a href=\"/.well-known/openid-configuration\">/.well-known/openid-configuration</a></p>"
+          + "<p><strong>DCR:</strong> <code>POST /connect/register</code></p>"
+        : "<p><strong>MCP endpoint:</strong> <code>/mcp</code> (open — auth uitgeschakeld)</p>";
+
+    app.MapGet("/", () => Results.Content(
+        "<!DOCTYPE html><html lang=\"nl\"><head><meta charset=\"utf-8\"><title>Reflectieve Duck MCP</title>"
+        + "<link rel=\"icon\" href=\"/logo.png\" type=\"image/png\">"
+        + "<style>body{font-family:system-ui,sans-serif;max-width:600px;margin:60px auto;padding:0 20px;color:#1a1a1a;text-align:center}"
+        + "h1{color:#2d5016}a{color:#2d7d46}code{background:#f0f0f0;padding:2px 6px;border-radius:3px}"
+        + ".tools{columns:2;text-align:left}.tools li{break-inside:avoid}</style></head><body>"
+        + "<img src=\"/logo.png\" alt=\"Reflectieve Duck\" width=\"120\">"
+        + "<h1>Reflectieve Duck MCP Server</h1>"
+        + "<p>Welzijns-MCP voor neurodivergente developers.</p>"
+        + authSection
+        + "<h3>45 tools + 15 prompts/agents</h3>"
+        + "<ul class=\"tools\">"
+        + "<li>stoplicht_status</li><li>stoplicht_geschiedenis</li><li>stoplicht_update</li><li>stoplicht_vergelijk</li>"
+        + "<li>stoplicht_tips</li><li>stoplicht_codewoord</li><li>stoplicht_rolverdeling</li><li>stoplicht_volledig</li>"
+        + "<li>feedback_toevoegen</li><li>feedback_lijst</li><li>feedback_zoeken</li><li>feedback_statistieken</li>"
+        + "<li>feedback_tags</li><li>reflectie_vragen</li><li>code_analyse</li><li>stacktrace_analyse</li>"
+        + "<li>context_patronen</li><li>context_inzichten</li><li>context_volledig</li><li>dashboard</li>"
+        + "<li>resource_ijsberg</li><li>resource_addendum</li><li>resource_asswijzer</li><li>resource_reflectie_assistent</li>"
+        + "<li>resource_lifemap</li><li>resource_sterktes</li><li>resource_health</li><li>resource_config</li>"
+        + "<li>focus_start</li><li>focus_stop</li><li>energie_log</li><li>productiviteit_analyse</li>"
+        + "<li>kernkwadrant</li><li>emmer_strategieen</li><li>emmer_anderen</li><li>emmer_triggers</li><li>emmer_reactie</li>"
+        + "<li>module_theory_of_mind</li><li>module_executieve_functies</li><li>module_sociale_coherentie</li>"
+        + "<li>module_dating</li><li>module_reflectieve_duck</li><li>module_retrospective</li>"
+        + "<li>module_kernkwadrant_analyse</li><li>module_ijsberg_analyse</li>"
+        + "</ul></body></html>", "text/html"));
 
     app.MapGet("/health", () => Results.Json(new
     {
@@ -294,18 +278,27 @@ if (transport == "http")
         version = "1.0.0"
     }));
 
-    app.MapGet("/server-info", (HttpContext ctx) => Results.Json(new
+    app.MapGet("/server-info", (HttpContext ctx) =>
     {
-        name = "reflectieve-duck",
-        version = "1.0.0",
-        transport = "http",
-        mcpEndpoint = "/mcp",
-        logoUrl = $"{ctx.Request.Scheme}://{ctx.Request.Host}/logo.png",
-        oauthMetadata = "/.well-known/openid-configuration",
-        dcr = "/connect/register",
-        tools = 45,
-        prompts = 15
-    }));
+        var baseUrl = $"{ctx.Request.Scheme}://{ctx.Request.Host}";
+        var info = new Dictionary<string, object>
+        {
+            ["name"] = "reflectieve-duck",
+            ["version"] = "1.0.0",
+            ["transport"] = "http",
+            ["authEnabled"] = authEnabled,
+            ["mcpEndpoint"] = "/mcp",
+            ["logoUrl"] = $"{baseUrl}/logo.png",
+            ["tools"] = 45,
+            ["prompts"] = 15
+        };
+        if (authEnabled)
+        {
+            info["oauthMetadata"] = "/.well-known/openid-configuration";
+            info["dcr"] = "/connect/register";
+        }
+        return Results.Json(info);
+    });
 
     // MED-1 fix: MCP OAuth Protected Resource metadata (RFC 9728)
     app.MapGet("/.well-known/oauth-protected-resource", (HttpContext ctx) => Results.Json(new
