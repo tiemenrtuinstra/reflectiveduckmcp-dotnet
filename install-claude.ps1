@@ -204,7 +204,7 @@ Write-Host "====================================================" -ForegroundCol
 Write-Host "  Installatie voltooid!"                             -ForegroundColor Green
 Write-Host "====================================================" -ForegroundColor Green
 Write-Host ""
-Write-Host "Beschikbare: 44 tools + 14 prompts/agents" -ForegroundColor Cyan
+Write-Host "Beschikbare: 45 tools + 15 prompts/agents" -ForegroundColor Cyan
 Write-Host "  Stoplicht:       status, geschiedenis, update, vergelijk, tips, codewoord, rolverdeling, volledig"
 Write-Host "  Feedback:        toevoegen, lijst, zoeken, statistieken, tags"
 Write-Host "  Reflectie:       reflectie_vragen"

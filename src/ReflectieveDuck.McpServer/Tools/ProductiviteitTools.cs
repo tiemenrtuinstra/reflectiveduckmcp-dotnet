@@ -40,8 +40,15 @@ public class ProductiviteitTools
         [Description("De taak waar je aan werkt")] string taak,
         [Description("Type sessie: DeepFocus, LightFocus, Meeting of Break (standaard DeepFocus)")] string state = "DeepFocus")
     {
-        var result = await _start.HandleAsync(new StartFocusCommand(taak, state));
-        return JsonSerializer.Serialize(result, JsonOptions);
+        try
+        {
+            var result = await _start.HandleAsync(new StartFocusCommand(taak, state));
+            return JsonSerializer.Serialize(result, JsonOptions);
+        }
+        catch (ArgumentException ex)
+        {
+            return ex.Message;
+        }
     }
 
     [McpServerTool(Name = "focus_stop"),
@@ -50,10 +57,17 @@ public class ProductiviteitTools
         [Description("ID van de sessie (optioneel, stopt anders de actieve sessie)")] int? id = null,
         [Description("Notities over de sessie (optioneel)")] string? notities = null)
     {
-        var result = await _end.HandleAsync(new EndFocusCommand(id, notities));
-        if (result is null)
-            return "Geen actieve focus sessie gevonden.";
-        return JsonSerializer.Serialize(result, JsonOptions);
+        try
+        {
+            var result = await _end.HandleAsync(new EndFocusCommand(id, notities));
+            if (result is null)
+                return "Geen actieve focus sessie gevonden.";
+            return JsonSerializer.Serialize(result, JsonOptions);
+        }
+        catch (InvalidOperationException ex)
+        {
+            return ex.Message;
+        }
     }
 
     [McpServerTool(Name = "energie_log"),

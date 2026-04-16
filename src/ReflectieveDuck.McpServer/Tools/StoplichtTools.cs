@@ -60,9 +60,16 @@ public class StoplichtTools
         [Description("Energielevel van 0 tot 100")] int energieLevel,
         [Description("Optionele notities bij deze status")] string? notities = null)
     {
-        var result = await _update.HandleAsync(
-            new UpdateStatusCommand(kleur, energieLevel, notities));
-        return JsonSerializer.Serialize(result, JsonOptions);
+        try
+        {
+            var result = await _update.HandleAsync(
+                new UpdateStatusCommand(kleur, energieLevel, notities));
+            return JsonSerializer.Serialize(result, JsonOptions);
+        }
+        catch (ArgumentException ex)
+        {
+            return ex.Message;
+        }
     }
 
     [McpServerTool(Name = "stoplicht_vergelijk"),
