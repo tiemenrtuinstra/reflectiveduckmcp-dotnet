@@ -190,9 +190,9 @@ using (var scope = app.Services.CreateScope())
     await manager.CreateAsync(new OpenIddictApplicationDescriptor
     {
         ClientId = clientId,
-        ClientSecret = clientSecret,
-        DisplayName = "Reflectieve Duck — Vaste Client",
-        ClientType = ClientTypes.Confidential,
+        // Public client: geen client_secret nodig, alleen PKCE
+        // ChatGPT en Claude.ai MCP connectors kennen geen client_secret
+        ClientType = ClientTypes.Public,
         ConsentType = ConsentTypes.Implicit,
         Permissions =
         {
