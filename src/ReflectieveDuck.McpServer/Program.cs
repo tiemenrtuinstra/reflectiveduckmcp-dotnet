@@ -18,8 +18,12 @@ builder.WebHost.UseSentry(o =>
 {
     o.Dsn = Environment.GetEnvironmentVariable("SENTRY_DSN")
         ?? "https://6be89257f7b27d2c56783b9c57386e39@o4511228687417344.ingest.de.sentry.io/4511228714877008";
-    o.TracesSampleRate = 0.2; // 20% van requests voor performance monitoring
-    o.SendDefaultPii = false; // Geen persoonlijke data naar Sentry
+    o.TracesSampleRate = 0.2; // 20% performance monitoring
+    o.ProfilesSampleRate = 0.2; // 20% profiling
+    o.SendDefaultPii = false; // Geen persoonlijke data
+    o.AttachStacktrace = true; // Stack traces bij alle events
+    o.MaxBreadcrumbs = 100; // Meer context per event
+    o.DiagnosticLevel = Sentry.SentryLevel.Warning; // Sentry interne diagnostics
     o.Environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") ?? "production";
     o.Release = "reflectieve-duck@1.0.0";
 });
