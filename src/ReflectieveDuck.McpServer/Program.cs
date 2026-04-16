@@ -232,6 +232,7 @@ if (transport == "http")
     app.UseForwardedHeaders();
     app.UseSentryTracing();
     app.UseCors();
+    app.UseStaticFiles(); // wwwroot/logo.png
     app.UseAuthentication();
     app.UseAuthorization();
     app.MapControllers(); // OAuth endpoints: /authorize, /token, /connect/register
@@ -242,13 +243,15 @@ if (transport == "http")
         <!DOCTYPE html>
         <html lang="nl">
         <head><meta charset="utf-8"><title>Reflectieve Duck MCP</title>
+        <link rel="icon" href="/logo.png" type="image/png">
         <style>
             body { font-family: system-ui, sans-serif; max-width: 600px; margin: 60px auto; padding: 0 20px; color: #1a1a1a; }
             h1 { color: #2d5016; } a { color: #2d7d46; } code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; }
             .tools { columns: 2; } .tools li { break-inside: avoid; }
         </style></head>
         <body>
-            <h1>&#x1F986; Reflectieve Duck MCP Server</h1>
+            <img src="/logo.png" alt="Reflectieve Duck" width="120" style="display:block;margin:0 auto 15px">
+            <h1>Reflectieve Duck MCP Server</h1>
             <p>Welzijns-MCP voor neurodivergente developers.</p>
             <p><strong>MCP endpoint:</strong> <code>/mcp</code> (OAuth beveiligd)</p>
             <p><strong>OAuth metadata:</strong>
@@ -291,12 +294,13 @@ if (transport == "http")
         version = "1.0.0"
     }));
 
-    app.MapGet("/server-info", () => Results.Json(new
+    app.MapGet("/server-info", (HttpContext ctx) => Results.Json(new
     {
         name = "reflectieve-duck",
         version = "1.0.0",
         transport = "http",
         mcpEndpoint = "/mcp",
+        logoUrl = $"{ctx.Request.Scheme}://{ctx.Request.Host}/logo.png",
         oauthMetadata = "/.well-known/openid-configuration",
         dcr = "/connect/register",
         tools = 45,
